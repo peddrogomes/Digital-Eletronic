@@ -22,7 +22,7 @@ https://fpgasoftware.intel.com/eula.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 8 344 176 360)
+	(rect -40 304 128 320)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLKIN" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
@@ -35,13 +35,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -48 360 8 384))
+	(annotation_block (location)(rect -96 320 -40 344))
 )
 (pin
 	(output)
 	(rect 600 344 776 360)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LED0" (rect 90 0 117 12)(font "Arial" ))
+	(text "CLKOUT" (rect 90 0 133 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -270,22 +270,22 @@ https://fpgasoftware.intel.com/eula.
 	(pt 600 352)
 )
 (connector
-	(pt 240 384)
-	(pt 240 352)
-)
-(connector
-	(pt 264 384)
-	(pt 240 384)
-)
-(connector
-	(pt 176 352)
-	(pt 240 352)
-)
-(connector
 	(pt 448 336)
 	(pt 448 352)
 )
 (connector
 	(pt 448 352)
 	(pt 464 352)
+)
+(connector
+	(pt 264 384)
+	(pt 248 384)
+)
+(connector
+	(pt 248 312)
+	(pt 248 384)
+)
+(connector
+	(pt 128 312)
+	(pt 248 312)
 )

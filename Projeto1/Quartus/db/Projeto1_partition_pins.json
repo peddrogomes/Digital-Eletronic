@@ -4,11 +4,15 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "LED0",
+					"name" : "LED",
 					"strict" : false
 				},
 				{
-					"name" : "CLKIN",
+					"name" : "Botao",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
 					"strict" : false
 				}
 			]

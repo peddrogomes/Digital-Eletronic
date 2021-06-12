@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6E22) Path("C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Project/Projeto1/output_files/") File("Projeto1.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE6E22) Path("C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/output_files/") File("Projeto1.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

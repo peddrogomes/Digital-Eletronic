@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto1
-Fri Jun 11 20:54:50 2021
+Fri Jun 11 23:06:18 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -14,7 +14,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: LPM_COUNTER:inst
+  9. Parameter Settings for User Entity Instance: divisor_de_clock:inst|LPM_COUNTER:inst
  10. Post-Synthesis Netlist Statistics for Top Partition
  11. Elapsed Time Per Partition
  12. Analysis & Synthesis Messages
@@ -44,16 +44,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 11 20:54:50 2021       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 11 23:06:18 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto1                                    ;
-; Top-level Entity Name              ; contadorNovo                                ;
+; Top-level Entity Name              ; projeto                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 37                                          ;
-;     Total combinational functions  ; 37                                          ;
-;     Dedicated logic registers      ; 26                                          ;
-; Total registers                    ; 26                                          ;
-; Total pins                         ; 2                                           ;
+; Total logic elements               ; 39                                          ;
+;     Total combinational functions  ; 39                                          ;
+;     Dedicated logic registers      ; 27                                          ;
+; Total registers                    ; 27                                          ;
+; Total pins                         ; 3                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE6E22C8        ;                    ;
-; Top-level entity name                                            ; contadorNovo       ; Projeto1           ;
+; Top-level entity name                                            ; projeto            ; Projeto1           ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -164,69 +164,73 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                   ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
-; contadorNovo.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Project/Projeto1/contadorNovo.bdf    ;         ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf         ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc         ;         ;
-; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cmpconst.inc            ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_compare.inc         ;         ;
-; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.inc         ;         ;
-; dffeea.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/dffeea.inc              ;         ;
-; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_counter_stratix.inc ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc          ;         ;
-; db/cntr_d2i.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Project/Projeto1/db/cntr_d2i.tdf     ;         ;
-; db/cmpr_dic.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Project/Projeto1/db/cmpr_dic.tdf     ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
+; divisor_de_clock.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/divisor_de_clock.bdf ;         ;
+; enable.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/enable.bdf           ;         ;
+; projeto.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/projeto.bdf          ;         ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf          ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_constant.inc         ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc           ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc          ;         ;
+; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cmpconst.inc             ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_compare.inc          ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.inc          ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/dffeea.inc               ;         ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_counter_stratix.inc  ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc           ;         ;
+; db/cntr_d2i.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cntr_d2i.tdf      ;         ;
+; db/cmpr_dic.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cmpr_dic.tdf      ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                        ;
-+---------------------------------------------+------------------------------------------------------+
-; Resource                                    ; Usage                                                ;
-+---------------------------------------------+------------------------------------------------------+
-; Estimated Total logic elements              ; 37                                                   ;
-;                                             ;                                                      ;
-; Total combinational functions               ; 37                                                   ;
-; Logic element usage by number of LUT inputs ;                                                      ;
-;     -- 4 input functions                    ; 8                                                    ;
-;     -- 3 input functions                    ; 0                                                    ;
-;     -- <=2 input functions                  ; 29                                                   ;
-;                                             ;                                                      ;
-; Logic elements by mode                      ;                                                      ;
-;     -- normal mode                          ; 12                                                   ;
-;     -- arithmetic mode                      ; 25                                                   ;
-;                                             ;                                                      ;
-; Total registers                             ; 26                                                   ;
-;     -- Dedicated logic registers            ; 26                                                   ;
-;     -- I/O registers                        ; 0                                                    ;
-;                                             ;                                                      ;
-; I/O pins                                    ; 2                                                    ;
-;                                             ;                                                      ;
-; Embedded Multiplier 9-bit elements          ; 0                                                    ;
-;                                             ;                                                      ;
-; Maximum fan-out node                        ; lpm_counter:inst|cntr_d2i:auto_generated|cout_actual ;
-; Maximum fan-out                             ; 26                                                   ;
-; Total fan-out                               ; 190                                                  ;
-; Average fan-out                             ; 2.84                                                 ;
-+---------------------------------------------+------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                              ;
++---------------------------------------------+----------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                      ;
++---------------------------------------------+----------------------------------------------------------------------------+
+; Estimated Total logic elements              ; 39                                                                         ;
+;                                             ;                                                                            ;
+; Total combinational functions               ; 39                                                                         ;
+; Logic element usage by number of LUT inputs ;                                                                            ;
+;     -- 4 input functions                    ; 8                                                                          ;
+;     -- 3 input functions                    ; 0                                                                          ;
+;     -- <=2 input functions                  ; 31                                                                         ;
+;                                             ;                                                                            ;
+; Logic elements by mode                      ;                                                                            ;
+;     -- normal mode                          ; 14                                                                         ;
+;     -- arithmetic mode                      ; 25                                                                         ;
+;                                             ;                                                                            ;
+; Total registers                             ; 27                                                                         ;
+;     -- Dedicated logic registers            ; 27                                                                         ;
+;     -- I/O registers                        ; 0                                                                          ;
+;                                             ;                                                                            ;
+; I/O pins                                    ; 3                                                                          ;
+;                                             ;                                                                            ;
+; Embedded Multiplier 9-bit elements          ; 0                                                                          ;
+;                                             ;                                                                            ;
+; Maximum fan-out node                        ; divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|cout_actual ;
+; Maximum fan-out                             ; 26                                                                         ;
+; Total fan-out                               ; 196                                                                        ;
+; Average fan-out                             ; 2.72                                                                       ;
++---------------------------------------------+----------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                              ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+--------------+
-; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Entity Name  ; Library Name ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+--------------+
-; |contadorNovo                   ; 37 (2)              ; 26 (1)                    ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |contadorNovo                                                         ; contadorNovo ; work         ;
-;    |lpm_counter:inst|           ; 35 (0)              ; 25 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |contadorNovo|lpm_counter:inst                                        ; lpm_counter  ; work         ;
-;       |cntr_d2i:auto_generated| ; 35 (27)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |contadorNovo|lpm_counter:inst|cntr_d2i:auto_generated                ; cntr_d2i     ; work         ;
-;          |cmpr_dic:cmpr1|       ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |contadorNovo|lpm_counter:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1 ; cmpr_dic     ; work         ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                      ;
++------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                    ; Entity Name      ; Library Name ;
++------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------+------------------+--------------+
+; |projeto                           ; 39 (1)              ; 27 (0)                    ; 0           ; 0            ; 0       ; 0         ; 3    ; 0            ; |projeto                                                                               ; projeto          ; work         ;
+;    |divisor_de_clock:inst|         ; 36 (1)              ; 26 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst                                                         ; divisor_de_clock ; work         ;
+;       |lpm_counter:inst|           ; 35 (0)              ; 25 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst|lpm_counter:inst                                        ; lpm_counter      ; work         ;
+;          |cntr_d2i:auto_generated| ; 35 (27)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated                ; cntr_d2i         ; work         ;
+;             |cmpr_dic:cmpr1|       ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1 ; cmpr_dic         ; work         ;
+;    |enable:inst3|                  ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|enable:inst3                                                                  ; enable           ; work         ;
++------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -235,7 +239,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 26    ;
+; Total registers                              ; 27    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 25    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -245,30 +249,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_COUNTER:inst   ;
-+------------------------+-------------------+--------------------+
-; Parameter Name         ; Value             ; Type               ;
-+------------------------+-------------------+--------------------+
-; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY         ;
-; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY       ;
-; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE       ;
-; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE     ;
-; LPM_WIDTH              ; 25                ; Untyped            ;
-; LPM_DIRECTION          ; DEFAULT           ; Untyped            ;
-; LPM_MODULUS            ; 25000000          ; Untyped            ;
-; LPM_AVALUE             ; UNUSED            ; Untyped            ;
-; LPM_SVALUE             ; UNUSED            ; Untyped            ;
-; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped            ;
-; DEVICE_FAMILY          ; Cyclone IV E      ; Untyped            ;
-; CARRY_CHAIN            ; MANUAL            ; Untyped            ;
-; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH ;
-; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK ;
-; CARRY_CNT_EN           ; SMART             ; Untyped            ;
-; LABWIDE_SCLR           ; ON                ; Untyped            ;
-; USE_NEW_VERSION        ; TRUE              ; Untyped            ;
-; CBXI_PARAMETER         ; cntr_d2i          ; Untyped            ;
-+------------------------+-------------------+--------------------+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisor_de_clock:inst|LPM_COUNTER:inst ;
++------------------------+-------------------+----------------------------------------+
+; Parameter Name         ; Value             ; Type                                   ;
++------------------------+-------------------+----------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                         ;
+; LPM_WIDTH              ; 25                ; Untyped                                ;
+; LPM_DIRECTION          ; DEFAULT           ; Untyped                                ;
+; LPM_MODULUS            ; 25000000          ; Untyped                                ;
+; LPM_AVALUE             ; UNUSED            ; Untyped                                ;
+; LPM_SVALUE             ; UNUSED            ; Untyped                                ;
+; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                                ;
+; DEVICE_FAMILY          ; Cyclone IV E      ; Untyped                                ;
+; CARRY_CHAIN            ; MANUAL            ; Untyped                                ;
+; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                     ;
+; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                     ;
+; CARRY_CNT_EN           ; SMART             ; Untyped                                ;
+; LABWIDE_SCLR           ; ON                ; Untyped                                ;
+; USE_NEW_VERSION        ; TRUE              ; Untyped                                ;
+; CBXI_PARAMETER         ; cntr_d2i          ; Untyped                                ;
++------------------------+-------------------+----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -277,21 +281,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 2                           ;
-; cycloneiii_ff         ; 26                          ;
+; boundary_port         ; 3                           ;
+; cycloneiii_ff         ; 27                          ;
 ;     SLD               ; 25                          ;
-;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 37                          ;
+;     plain             ; 2                           ;
+; cycloneiii_lcell_comb ; 39                          ;
 ;     arith             ; 25                          ;
 ;         2 data inputs ; 25                          ;
-;     normal            ; 12                          ;
+;     normal            ; 14                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 2                           ;
 ;         4 data inputs ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 3.48                        ;
+; Average LUT depth     ; 3.36                        ;
 +-----------------------+-----------------------------+
 
 
@@ -310,37 +314,41 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Jun 11 20:54:14 2021
+    Info: Processing started: Fri Jun 11 23:05:53 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto1 -c Projeto1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file contadornovo.bdf
-    Info (12023): Found entity 1: contadorNovo
-Info (12021): Found 1 design units, including 1 entities, in source file contador_certo.bdf
-    Info (12023): Found entity 1: contador_certo
-Info (12127): Elaborating entity "contadorNovo" for the top level hierarchy
-Info (12128): Elaborating entity "LPM_COUNTER" for hierarchy "LPM_COUNTER:inst"
-Info (12130): Elaborated megafunction instantiation "LPM_COUNTER:inst"
-Info (12133): Instantiated megafunction "LPM_COUNTER:inst" with the following parameter:
+Info (12021): Found 1 design units, including 1 entities, in source file divisor_de_clock.bdf
+    Info (12023): Found entity 1: divisor_de_clock
+Info (12021): Found 1 design units, including 1 entities, in source file enable.bdf
+    Info (12023): Found entity 1: enable
+Info (12021): Found 1 design units, including 1 entities, in source file projeto.bdf
+    Info (12023): Found entity 1: projeto
+Info (12127): Elaborating entity "projeto" for the top level hierarchy
+Info (12128): Elaborating entity "enable" for hierarchy "enable:inst3"
+Info (12128): Elaborating entity "divisor_de_clock" for hierarchy "divisor_de_clock:inst"
+Info (12128): Elaborating entity "LPM_COUNTER" for hierarchy "divisor_de_clock:inst|LPM_COUNTER:inst"
+Info (12130): Elaborated megafunction instantiation "divisor_de_clock:inst|LPM_COUNTER:inst"
+Info (12133): Instantiated megafunction "divisor_de_clock:inst|LPM_COUNTER:inst" with the following parameter:
     Info (12134): Parameter "LPM_MODULUS" = "25000000"
     Info (12134): Parameter "LPM_WIDTH" = "25"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_d2i.tdf
-    Info (12023): Found entity 1: cntr_d2i File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Project/Projeto1/db/cntr_d2i.tdf Line: 28
-Info (12128): Elaborating entity "cntr_d2i" for hierarchy "LPM_COUNTER:inst|cntr_d2i:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf Line: 259
+    Info (12023): Found entity 1: cntr_d2i File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cntr_d2i.tdf Line: 28
+Info (12128): Elaborating entity "cntr_d2i" for hierarchy "divisor_de_clock:inst|LPM_COUNTER:inst|cntr_d2i:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf Line: 259
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_dic.tdf
-    Info (12023): Found entity 1: cmpr_dic File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Project/Projeto1/db/cmpr_dic.tdf Line: 23
-Info (12128): Elaborating entity "cmpr_dic" for hierarchy "LPM_COUNTER:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1" File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Project/Projeto1/db/cntr_d2i.tdf Line: 160
+    Info (12023): Found entity 1: cmpr_dic File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cmpr_dic.tdf Line: 23
+Info (12128): Elaborating entity "cmpr_dic" for hierarchy "divisor_de_clock:inst|LPM_COUNTER:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1" File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cntr_d2i.tdf Line: 160
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 39 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
+Info (21057): Implemented 42 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 37 logic cells
+    Info (21061): Implemented 39 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4748 megabytes
-    Info: Processing ended: Fri Jun 11 20:54:50 2021
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:01:06
+    Info: Peak virtual memory: 4738 megabytes
+    Info: Processing ended: Fri Jun 11 23:06:18 2021
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:56
 
 

@@ -2,76 +2,112 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'CLKIN'
-Slack : -6.169
-TNS   : -151.146
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -5.627
+TNS   : -139.327
 
-Type  : Slow 1200mV 85C Model Setup 'lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
-Slack : -1.603
-TNS   : -1.603
+Type  : Slow 1200mV 85C Model Setup 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : -1.511
+TNS   : -1.511
 
-Type  : Slow 1200mV 85C Model Hold 'CLKIN'
-Slack : -1.978
-TNS   : -28.476
+Type  : Slow 1200mV 85C Model Setup 'Botao'
+Slack : 0.114
+TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : -1.769
+TNS   : -23.820
+
+Type  : Slow 1200mV 85C Model Hold 'Botao'
 Slack : 0.497
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLKIN'
-Slack : -3.000
-TNS   : -40.175
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
-Slack : -1.560
-TNS   : -8.757
-
-Type  : Slow 1200mV 0C Model Setup 'CLKIN'
-Slack : -5.806
-TNS   : -142.217
-
-Type  : Slow 1200mV 0C Model Setup 'lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
-Slack : -1.188
-TNS   : -1.188
-
-Type  : Slow 1200mV 0C Model Hold 'CLKIN'
-Slack : -1.832
-TNS   : -27.348
-
-Type  : Slow 1200mV 0C Model Hold 'lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
-Slack : 0.445
+Type  : Slow 1200mV 85C Model Hold 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : 0.497
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLKIN'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
 TNS   : -40.175
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
-Slack : -1.487
-TNS   : -7.152
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Botao'
+Slack : -3.000
+TNS   : -4.487
 
-Type  : Fast 1200mV 0C Model Setup 'CLKIN'
-Slack : -2.149
-TNS   : -52.857
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : -1.556
+TNS   : -8.471
 
-Type  : Fast 1200mV 0C Model Setup 'lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
-Slack : -0.214
-TNS   : -0.214
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -5.256
+TNS   : -130.171
 
-Type  : Fast 1200mV 0C Model Hold 'CLKIN'
-Slack : -0.987
-TNS   : -14.664
+Type  : Slow 1200mV 0C Model Setup 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : -1.098
+TNS   : -1.098
 
-Type  : Fast 1200mV 0C Model Hold 'lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Type  : Slow 1200mV 0C Model Setup 'Botao'
 Slack : 0.208
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLKIN'
-Slack : -3.000
-TNS   : -28.000
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : -1.637
+TNS   : -22.980
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Type  : Slow 1200mV 0C Model Hold 'Botao'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -40.175
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Botao'
+Slack : -3.000
+TNS   : -4.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : -1.487
+TNS   : -6.861
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -1.981
+TNS   : -48.332
+
+Type  : Fast 1200mV 0C Model Setup 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : -0.185
+TNS   : -0.185
+
+Type  : Fast 1200mV 0C Model Setup 'Botao'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : -0.860
+TNS   : -11.892
+
+Type  : Fast 1200mV 0C Model Hold 'Botao'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -28.237
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Botao'
+Slack : -3.000
+TNS   : -4.042
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
 Slack : -1.000
-TNS   : -3.026
+TNS   : -2.893
 
 ------------------------------------------------------------
