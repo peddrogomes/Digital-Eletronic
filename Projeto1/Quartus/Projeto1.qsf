@@ -61,3 +61,4 @@ set_global_assignment -name BDF_FILE somador_e_subtrator.bdf
 set_global_assignment -name BDF_FILE divisor_de_clock.bdf
 set_global_assignment -name BDF_FILE enable.bdf
 set_global_assignment -name BDF_FILE projeto.bdf
+set_global_assignment -name BDF_FILE decod_bsd_7seg.bdf
