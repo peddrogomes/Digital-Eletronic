@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto1
-Fri Jun 11 23:06:18 2021
+Wed Jun 16 15:54:06 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,11 +13,12 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: divisor_de_clock:inst|LPM_COUNTER:inst
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: divisor_de_clock:inst11|LPM_COUNTER:inst
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -44,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 11 23:06:18 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 16 15:54:06 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto1                                    ;
 ; Top-level Entity Name              ; projeto                                     ;
@@ -53,7 +54,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Total combinational functions  ; 39                                          ;
 ;     Dedicated logic registers      ; 27                                          ;
 ; Total registers                    ; 27                                          ;
-; Total pins                         ; 3                                           ;
+; Total pins                         ; 13                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -172,6 +173,8 @@ https://fpgasoftware.intel.com/eula.
 ; divisor_de_clock.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/divisor_de_clock.bdf ;         ;
 ; enable.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/enable.bdf           ;         ;
 ; projeto.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/projeto.bdf          ;         ;
+; decod_bsd_7seg.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/decod_bsd_7seg.bdf   ;         ;
+; mux_display.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/mux_display.bdf      ;         ;
 ; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf          ;         ;
 ; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_constant.inc         ;         ;
 ; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc           ;         ;
@@ -187,51 +190,62 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                              ;
-+---------------------------------------------+----------------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                      ;
-+---------------------------------------------+----------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 39                                                                         ;
-;                                             ;                                                                            ;
-; Total combinational functions               ; 39                                                                         ;
-; Logic element usage by number of LUT inputs ;                                                                            ;
-;     -- 4 input functions                    ; 8                                                                          ;
-;     -- 3 input functions                    ; 0                                                                          ;
-;     -- <=2 input functions                  ; 31                                                                         ;
-;                                             ;                                                                            ;
-; Logic elements by mode                      ;                                                                            ;
-;     -- normal mode                          ; 14                                                                         ;
-;     -- arithmetic mode                      ; 25                                                                         ;
-;                                             ;                                                                            ;
-; Total registers                             ; 27                                                                         ;
-;     -- Dedicated logic registers            ; 27                                                                         ;
-;     -- I/O registers                        ; 0                                                                          ;
-;                                             ;                                                                            ;
-; I/O pins                                    ; 3                                                                          ;
-;                                             ;                                                                            ;
-; Embedded Multiplier 9-bit elements          ; 0                                                                          ;
-;                                             ;                                                                            ;
-; Maximum fan-out node                        ; divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|cout_actual ;
-; Maximum fan-out                             ; 26                                                                         ;
-; Total fan-out                               ; 196                                                                        ;
-; Average fan-out                             ; 2.72                                                                       ;
-+---------------------------------------------+----------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                ;
++---------------------------------------------+------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                        ;
++---------------------------------------------+------------------------------------------------------------------------------+
+; Estimated Total logic elements              ; 39                                                                           ;
+;                                             ;                                                                              ;
+; Total combinational functions               ; 39                                                                           ;
+; Logic element usage by number of LUT inputs ;                                                                              ;
+;     -- 4 input functions                    ; 8                                                                            ;
+;     -- 3 input functions                    ; 0                                                                            ;
+;     -- <=2 input functions                  ; 31                                                                           ;
+;                                             ;                                                                              ;
+; Logic elements by mode                      ;                                                                              ;
+;     -- normal mode                          ; 14                                                                           ;
+;     -- arithmetic mode                      ; 25                                                                           ;
+;                                             ;                                                                              ;
+; Total registers                             ; 27                                                                           ;
+;     -- Dedicated logic registers            ; 27                                                                           ;
+;     -- I/O registers                        ; 0                                                                            ;
+;                                             ;                                                                              ;
+; I/O pins                                    ; 13                                                                           ;
+;                                             ;                                                                              ;
+; Embedded Multiplier 9-bit elements          ; 0                                                                            ;
+;                                             ;                                                                              ;
+; Maximum fan-out node                        ; divisor_de_clock:inst11|lpm_counter:inst|cntr_d2i:auto_generated|cout_actual ;
+; Maximum fan-out                             ; 26                                                                           ;
+; Total fan-out                               ; 206                                                                          ;
+; Average fan-out                             ; 2.24                                                                         ;
++---------------------------------------------+------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                      ;
-+------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------+------------------+--------------+
-; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                    ; Entity Name      ; Library Name ;
-+------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------+------------------+--------------+
-; |projeto                           ; 39 (1)              ; 27 (0)                    ; 0           ; 0            ; 0       ; 0         ; 3    ; 0            ; |projeto                                                                               ; projeto          ; work         ;
-;    |divisor_de_clock:inst|         ; 36 (1)              ; 26 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst                                                         ; divisor_de_clock ; work         ;
-;       |lpm_counter:inst|           ; 35 (0)              ; 25 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst|lpm_counter:inst                                        ; lpm_counter      ; work         ;
-;          |cntr_d2i:auto_generated| ; 35 (27)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated                ; cntr_d2i         ; work         ;
-;             |cmpr_dic:cmpr1|       ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1 ; cmpr_dic         ; work         ;
-;    |enable:inst3|                  ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|enable:inst3                                                                  ; enable           ; work         ;
-+------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------+------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                        ;
++------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                      ; Entity Name      ; Library Name ;
++------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+------------------+--------------+
+; |projeto                           ; 39 (1)              ; 27 (0)                    ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |projeto                                                                                 ; projeto          ; work         ;
+;    |divisor_de_clock:inst11|       ; 36 (1)              ; 26 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11                                                         ; divisor_de_clock ; work         ;
+;       |lpm_counter:inst|           ; 35 (0)              ; 25 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11|lpm_counter:inst                                        ; lpm_counter      ; work         ;
+;          |cntr_d2i:auto_generated| ; 35 (27)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11|lpm_counter:inst|cntr_d2i:auto_generated                ; cntr_d2i         ; work         ;
+;             |cmpr_dic:cmpr1|       ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11|lpm_counter:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1 ; cmpr_dic         ; work         ;
+;    |enable:inst3|                  ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|enable:inst3                                                                    ; enable           ; work         ;
++------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; mux_display:inst1|inst                ; Stuck at VCC due to stuck port data_in ;
+; mux_display:inst1|inst9               ; Stuck at GND due to stuck port clock   ;
+; Total Number of Removed Registers = 2 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -249,30 +263,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: divisor_de_clock:inst|LPM_COUNTER:inst ;
-+------------------------+-------------------+----------------------------------------+
-; Parameter Name         ; Value             ; Type                                   ;
-+------------------------+-------------------+----------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                             ;
-; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                           ;
-; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                           ;
-; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                         ;
-; LPM_WIDTH              ; 25                ; Untyped                                ;
-; LPM_DIRECTION          ; DEFAULT           ; Untyped                                ;
-; LPM_MODULUS            ; 25000000          ; Untyped                                ;
-; LPM_AVALUE             ; UNUSED            ; Untyped                                ;
-; LPM_SVALUE             ; UNUSED            ; Untyped                                ;
-; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                                ;
-; DEVICE_FAMILY          ; Cyclone IV E      ; Untyped                                ;
-; CARRY_CHAIN            ; MANUAL            ; Untyped                                ;
-; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                     ;
-; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                     ;
-; CARRY_CNT_EN           ; SMART             ; Untyped                                ;
-; LABWIDE_SCLR           ; ON                ; Untyped                                ;
-; USE_NEW_VERSION        ; TRUE              ; Untyped                                ;
-; CBXI_PARAMETER         ; cntr_d2i          ; Untyped                                ;
-+------------------------+-------------------+----------------------------------------+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisor_de_clock:inst11|LPM_COUNTER:inst ;
++------------------------+-------------------+------------------------------------------+
+; Parameter Name         ; Value             ; Type                                     ;
++------------------------+-------------------+------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                               ;
+; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                             ;
+; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                             ;
+; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                           ;
+; LPM_WIDTH              ; 25                ; Untyped                                  ;
+; LPM_DIRECTION          ; DEFAULT           ; Untyped                                  ;
+; LPM_MODULUS            ; 25000000          ; Untyped                                  ;
+; LPM_AVALUE             ; UNUSED            ; Untyped                                  ;
+; LPM_SVALUE             ; UNUSED            ; Untyped                                  ;
+; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                                  ;
+; DEVICE_FAMILY          ; Cyclone IV E      ; Untyped                                  ;
+; CARRY_CHAIN            ; MANUAL            ; Untyped                                  ;
+; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                       ;
+; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                       ;
+; CARRY_CNT_EN           ; SMART             ; Untyped                                  ;
+; LABWIDE_SCLR           ; ON                ; Untyped                                  ;
+; USE_NEW_VERSION        ; TRUE              ; Untyped                                  ;
+; CBXI_PARAMETER         ; cntr_d2i          ; Untyped                                  ;
++------------------------+-------------------+------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -281,21 +295,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 3                           ;
+; boundary_port         ; 13                          ;
 ; cycloneiii_ff         ; 27                          ;
 ;     SLD               ; 25                          ;
 ;     plain             ; 2                           ;
-; cycloneiii_lcell_comb ; 39                          ;
+; cycloneiii_lcell_comb ; 40                          ;
 ;     arith             ; 25                          ;
 ;         2 data inputs ; 25                          ;
-;     normal            ; 14                          ;
-;         0 data inputs ; 2                           ;
+;     normal            ; 15                          ;
+;         0 data inputs ; 3                           ;
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 2                           ;
 ;         4 data inputs ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 3.36                        ;
+; Average LUT depth     ; 3.32                        ;
 +-----------------------+-----------------------------+
 
 
@@ -314,41 +328,68 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Jun 11 23:05:53 2021
+    Info: Processing started: Wed Jun 16 15:53:17 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto1 -c Projeto1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file contador_de_4bits.bdf
+    Info (12023): Found entity 1: contador_de_4bits
+Info (12021): Found 1 design units, including 1 entities, in source file contador_0_100.bdf
+    Info (12023): Found entity 1: contador_0_100
+Info (12021): Found 1 design units, including 1 entities, in source file somador_e_subtrator.bdf
+    Info (12023): Found entity 1: somador_e_subtrator
 Info (12021): Found 1 design units, including 1 entities, in source file divisor_de_clock.bdf
     Info (12023): Found entity 1: divisor_de_clock
 Info (12021): Found 1 design units, including 1 entities, in source file enable.bdf
     Info (12023): Found entity 1: enable
 Info (12021): Found 1 design units, including 1 entities, in source file projeto.bdf
     Info (12023): Found entity 1: projeto
+Info (12021): Found 1 design units, including 1 entities, in source file decod_bsd_7seg.bdf
+    Info (12023): Found entity 1: decod_bsd_7seg
+Info (12021): Found 1 design units, including 1 entities, in source file mux_display.bdf
+    Info (12023): Found entity 1: mux_display
 Info (12127): Elaborating entity "projeto" for the top level hierarchy
+Warning (275011): Block or symbol "NOT" of instance "inst2" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst5" overlaps another block or symbol
 Info (12128): Elaborating entity "enable" for hierarchy "enable:inst3"
-Info (12128): Elaborating entity "divisor_de_clock" for hierarchy "divisor_de_clock:inst"
-Info (12128): Elaborating entity "LPM_COUNTER" for hierarchy "divisor_de_clock:inst|LPM_COUNTER:inst"
-Info (12130): Elaborated megafunction instantiation "divisor_de_clock:inst|LPM_COUNTER:inst"
-Info (12133): Instantiated megafunction "divisor_de_clock:inst|LPM_COUNTER:inst" with the following parameter:
+Info (12128): Elaborating entity "divisor_de_clock" for hierarchy "divisor_de_clock:inst11"
+Info (12128): Elaborating entity "LPM_COUNTER" for hierarchy "divisor_de_clock:inst11|LPM_COUNTER:inst"
+Info (12130): Elaborated megafunction instantiation "divisor_de_clock:inst11|LPM_COUNTER:inst"
+Info (12133): Instantiated megafunction "divisor_de_clock:inst11|LPM_COUNTER:inst" with the following parameter:
     Info (12134): Parameter "LPM_MODULUS" = "25000000"
     Info (12134): Parameter "LPM_WIDTH" = "25"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_d2i.tdf
     Info (12023): Found entity 1: cntr_d2i File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cntr_d2i.tdf Line: 28
-Info (12128): Elaborating entity "cntr_d2i" for hierarchy "divisor_de_clock:inst|LPM_COUNTER:inst|cntr_d2i:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf Line: 259
+Info (12128): Elaborating entity "cntr_d2i" for hierarchy "divisor_de_clock:inst11|LPM_COUNTER:inst|cntr_d2i:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf Line: 259
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_dic.tdf
     Info (12023): Found entity 1: cmpr_dic File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cmpr_dic.tdf Line: 23
-Info (12128): Elaborating entity "cmpr_dic" for hierarchy "divisor_de_clock:inst|LPM_COUNTER:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1" File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cntr_d2i.tdf Line: 160
+Info (12128): Elaborating entity "cmpr_dic" for hierarchy "divisor_de_clock:inst11|LPM_COUNTER:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1" File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cntr_d2i.tdf Line: 160
+Info (12128): Elaborating entity "decod_bsd_7seg" for hierarchy "decod_bsd_7seg:inst12"
+Warning (275008): Primitive "NOT" of instance "inst16" not used
+Info (12128): Elaborating entity "mux_display" for hierarchy "mux_display:inst1"
+Warning (275011): Block or symbol "DFF" of instance "inst9" overlaps another block or symbol
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "7seg_a" is stuck at VCC
+    Warning (13410): Pin "7seg_b" is stuck at VCC
+    Warning (13410): Pin "7seg_c" is stuck at VCC
+    Warning (13410): Pin "7seg_d" is stuck at VCC
+    Warning (13410): Pin "7seg_e" is stuck at VCC
+    Warning (13410): Pin "7seg_f" is stuck at VCC
+    Warning (13410): Pin "7seg_g" is stuck at VCC
+    Warning (13410): Pin "pin_name1" is stuck at VCC
+    Warning (13410): Pin "pin_name2" is stuck at GND
+    Warning (13410): Pin "pin_name3" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 42 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 52 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 1 output pins
+    Info (21059): Implemented 11 output pins
     Info (21061): Implemented 39 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4738 megabytes
-    Info: Processing ended: Fri Jun 11 23:06:18 2021
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:56
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4755 megabytes
+    Info: Processing ended: Wed Jun 16 15:54:07 2021
+    Info: Elapsed time: 00:00:50
+    Info: Total CPU time (on all processors): 00:01:17
 
 

@@ -1,4 +1,4 @@
-Fitter Status : Successful - Fri Jun 11 23:06:28 2021
+Fitter Status : Successful - Wed Jun 16 15:54:20 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Projeto1
 Top-level Entity Name : projeto
@@ -9,7 +9,7 @@ Total logic elements : 40 / 6,272 ( < 1 % )
     Total combinational functions : 39 / 6,272 ( < 1 % )
     Dedicated logic registers : 27 / 6,272 ( < 1 % )
 Total registers : 27
-Total pins : 3 / 92 ( 3 % )
+Total pins : 13 / 92 ( 14 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )

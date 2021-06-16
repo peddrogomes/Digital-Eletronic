@@ -1,7 +1,17 @@
 |projeto
 LED <= enable:inst3.E_OUT
-CLK => divisor_de_clock:inst.CLKIN
+CLK => divisor_de_clock:inst11.CLKIN
 Botao => enable:inst3.Button
+7seg_a <= decod_bsd_7seg:inst12.a_o
+7seg_b <= decod_bsd_7seg:inst12.b_o
+7seg_c <= decod_bsd_7seg:inst12.c_o
+7seg_d <= decod_bsd_7seg:inst12.d_o
+7seg_e <= decod_bsd_7seg:inst12.e_o
+7seg_f <= decod_bsd_7seg:inst12.f_o
+7seg_g <= decod_bsd_7seg:inst12.g_o
+pin_name1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+pin_name3 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto|enable:inst3
@@ -10,12 +20,12 @@ E_IN => inst.IN0
 Button => inst4.CLK
 
 
-|projeto|divisor_de_clock:inst
+|projeto|divisor_de_clock:inst11
 CLKOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 CLKIN => LPM_COUNTER:inst.clock
 
 
-|projeto|divisor_de_clock:inst|LPM_COUNTER:inst
+|projeto|divisor_de_clock:inst11|LPM_COUNTER:inst
 clock => cntr_d2i:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
@@ -98,7 +108,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|projeto|divisor_de_clock:inst|LPM_COUNTER:inst|cntr_d2i:auto_generated
+|projeto|divisor_de_clock:inst11|LPM_COUNTER:inst|cntr_d2i:auto_generated
 clock => counter_reg_bit[24].CLK
 clock => counter_reg_bit[23].CLK
 clock => counter_reg_bit[22].CLK
@@ -127,7 +137,7 @@ clock => counter_reg_bit[0].CLK
 cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto|divisor_de_clock:inst|LPM_COUNTER:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1
+|projeto|divisor_de_clock:inst11|LPM_COUNTER:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[4].IN0
 dataa[1] => data_wire[4].IN0
@@ -179,5 +189,45 @@ datab[21] => data_wire[14].IN1
 datab[22] => data_wire[15].IN1
 datab[23] => data_wire[15].IN1
 datab[24] => data_wire[16].IN1
+
+
+|projeto|decod_bsd_7seg:inst12
+a_o <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A_IN => inst4.IN0
+A_IN => inst5.IN0
+A_IN => inst27.IN0
+A_IN => inst27.IN2
+A_IN => inst26.IN1
+A_IN => inst13.IN0
+A_IN => inst14.IN0
+B_IN => inst1.IN0
+B_IN => inst17.IN0
+B_IN => inst25.IN2
+B_IN => inst22.IN0
+B_IN => inst24.IN0
+B_IN => inst2.IN0
+D_IN => inst1.IN1
+D_IN => inst19.IN0
+D_IN => inst3.IN1
+D_IN => inst25.IN0
+C_IN => inst4.IN2
+C_IN => inst3.IN0
+C_IN => inst18.IN0
+C_IN => inst21.IN0
+C_IN => inst23.IN1
+C_IN => inst22.IN1
+b_o <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+c_o <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+d_o <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+e_o <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+f_o <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+g_o <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|mux_display:inst1
+7seg_1 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+CLK_I => inst.CLK
+7seg_2 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+7seg_3 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 
 
