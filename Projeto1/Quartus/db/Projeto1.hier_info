@@ -1,17 +1,18 @@
 |projeto
 LED <= enable:inst3.E_OUT
 CLK => divisor_de_clock:inst11.CLKIN
+CLK => mux_display:inst5.CLK_I
 Botao => enable:inst3.Button
-7seg_a <= decod_bsd_7seg:inst12.a_o
-7seg_b <= decod_bsd_7seg:inst12.b_o
-7seg_c <= decod_bsd_7seg:inst12.c_o
-7seg_d <= decod_bsd_7seg:inst12.d_o
-7seg_e <= decod_bsd_7seg:inst12.e_o
-7seg_f <= decod_bsd_7seg:inst12.f_o
-7seg_g <= decod_bsd_7seg:inst12.g_o
-pin_name1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-pin_name2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-pin_name3 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+7seg_a <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+7seg_b <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+7seg_c <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+7seg_d <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+7seg_e <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+7seg_f <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+7seg_g <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+pin_name3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto|enable:inst3
@@ -191,7 +192,24 @@ datab[23] => data_wire[15].IN1
 datab[24] => data_wire[16].IN1
 
 
-|projeto|decod_bsd_7seg:inst12
+|projeto|seletor_7seg:inst
+7seg_selector <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+selector2 => inst1.IN0
+7seg2 => inst1.IN1
+selector3 => inst2.IN0
+7seg3 => inst2.IN1
+selector1 => inst.IN0
+7seg1 => inst.IN1
+
+
+|projeto|mux_display:inst5
+7seg_1 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+CLK_I => inst2.CLK
+7seg_2 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+7seg_3 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|decod_bsd_7seg:inst14
 a_o <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 A_IN => inst4.IN0
 A_IN => inst5.IN0
@@ -224,10 +242,142 @@ f_o <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 g_o <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto|mux_display:inst1
-7seg_1 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-CLK_I => inst.CLK
-7seg_2 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-7seg_3 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+|projeto|decod_bsd_7seg:inst15
+a_o <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A_IN => inst4.IN0
+A_IN => inst5.IN0
+A_IN => inst27.IN0
+A_IN => inst27.IN2
+A_IN => inst26.IN1
+A_IN => inst13.IN0
+A_IN => inst14.IN0
+B_IN => inst1.IN0
+B_IN => inst17.IN0
+B_IN => inst25.IN2
+B_IN => inst22.IN0
+B_IN => inst24.IN0
+B_IN => inst2.IN0
+D_IN => inst1.IN1
+D_IN => inst19.IN0
+D_IN => inst3.IN1
+D_IN => inst25.IN0
+C_IN => inst4.IN2
+C_IN => inst3.IN0
+C_IN => inst18.IN0
+C_IN => inst21.IN0
+C_IN => inst23.IN1
+C_IN => inst22.IN1
+b_o <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+c_o <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+d_o <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+e_o <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+f_o <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+g_o <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|decod_bsd_7seg:inst16
+a_o <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A_IN => inst4.IN0
+A_IN => inst5.IN0
+A_IN => inst27.IN0
+A_IN => inst27.IN2
+A_IN => inst26.IN1
+A_IN => inst13.IN0
+A_IN => inst14.IN0
+B_IN => inst1.IN0
+B_IN => inst17.IN0
+B_IN => inst25.IN2
+B_IN => inst22.IN0
+B_IN => inst24.IN0
+B_IN => inst2.IN0
+D_IN => inst1.IN1
+D_IN => inst19.IN0
+D_IN => inst3.IN1
+D_IN => inst25.IN0
+C_IN => inst4.IN2
+C_IN => inst3.IN0
+C_IN => inst18.IN0
+C_IN => inst21.IN0
+C_IN => inst23.IN1
+C_IN => inst22.IN1
+b_o <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+c_o <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+d_o <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+e_o <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+f_o <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+g_o <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|seletor_7seg:inst6
+7seg_selector <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+selector2 => inst1.IN0
+7seg2 => inst1.IN1
+selector3 => inst2.IN0
+7seg3 => inst2.IN1
+selector1 => inst.IN0
+7seg1 => inst.IN1
+
+
+|projeto|seletor_7seg:inst7
+7seg_selector <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+selector2 => inst1.IN0
+7seg2 => inst1.IN1
+selector3 => inst2.IN0
+7seg3 => inst2.IN1
+selector1 => inst.IN0
+7seg1 => inst.IN1
+
+
+|projeto|seletor_7seg:inst8
+7seg_selector <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+selector2 => inst1.IN0
+7seg2 => inst1.IN1
+selector3 => inst2.IN0
+7seg3 => inst2.IN1
+selector1 => inst.IN0
+7seg1 => inst.IN1
+
+
+|projeto|seletor_7seg:inst9
+7seg_selector <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+selector2 => inst1.IN0
+7seg2 => inst1.IN1
+selector3 => inst2.IN0
+7seg3 => inst2.IN1
+selector1 => inst.IN0
+7seg1 => inst.IN1
+
+
+|projeto|seletor_7seg:inst10
+7seg_selector <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+selector2 => inst1.IN0
+7seg2 => inst1.IN1
+selector3 => inst2.IN0
+7seg3 => inst2.IN1
+selector1 => inst.IN0
+7seg1 => inst.IN1
+
+
+|projeto|seletor_7seg:inst12
+7seg_selector <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+selector2 => inst1.IN0
+7seg2 => inst1.IN1
+selector3 => inst2.IN0
+7seg3 => inst2.IN1
+selector1 => inst.IN0
+7seg1 => inst.IN1
+
+
+|projeto|contador_0_100:inst13
+dig00 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clock_in => inst.CLK
+dig01 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+dig02 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+dig03 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+dig10 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+dig11 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+dig12 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+dig13 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+dig30 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 

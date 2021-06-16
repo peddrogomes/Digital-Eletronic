@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'pin_name4'
+Slack : -5.250
+TNS   : -126.109
+
+Type  : Slow 1200mV 85C Model Setup 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : -1.477
+TNS   : -1.477
+
+Type  : Slow 1200mV 85C Model Hold 'pin_name4'
+Slack : -1.245
+TNS   : -12.410
+
+Type  : Slow 1200mV 85C Model Hold 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pin_name4'
+Slack : -3.000
+TNS   : -40.175
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : -1.487
+TNS   : -7.995
+
+Type  : Slow 1200mV 0C Model Setup 'pin_name4'
+Slack : -4.869
+TNS   : -116.954
+
+Type  : Slow 1200mV 0C Model Setup 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : -1.079
+TNS   : -1.079
+
+Type  : Slow 1200mV 0C Model Hold 'pin_name4'
+Slack : -1.174
+TNS   : -12.542
+
+Type  : Slow 1200mV 0C Model Hold 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pin_name4'
+Slack : -3.000
+TNS   : -40.175
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : -1.487
+TNS   : -6.456
+
+Type  : Fast 1200mV 0C Model Setup 'pin_name4'
+Slack : -1.764
+TNS   : -41.731
+
+Type  : Fast 1200mV 0C Model Setup 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : -0.161
+TNS   : -0.161
+
+Type  : Fast 1200mV 0C Model Hold 'pin_name4'
+Slack : -0.603
+TNS   : -6.202
+
+Type  : Fast 1200mV 0C Model Hold 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pin_name4'
+Slack : -3.000
+TNS   : -28.827
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisor_de_clock:inst|lpm_counter:inst|cntr_d2i:auto_generated|counter_reg_bit[0]'
+Slack : -1.000
+TNS   : -2.669
+
+------------------------------------------------------------

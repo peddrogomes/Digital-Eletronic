@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto1
-Wed Jun 16 15:54:06 2021
+Wed Jun 16 18:33:48 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,12 +13,11 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: divisor_de_clock:inst11|LPM_COUNTER:inst
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: divisor_de_clock:inst11|LPM_COUNTER:inst
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -45,15 +44,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 16 15:54:06 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 16 18:33:48 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto1                                    ;
 ; Top-level Entity Name              ; projeto                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 39                                          ;
-;     Total combinational functions  ; 39                                          ;
-;     Dedicated logic registers      ; 27                                          ;
-; Total registers                    ; 27                                          ;
+; Total logic elements               ; 45                                          ;
+;     Total combinational functions  ; 45                                          ;
+;     Dedicated logic registers      ; 29                                          ;
+; Total registers                    ; 29                                          ;
 ; Total pins                         ; 13                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -170,11 +169,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                    ; Library ;
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
+; contador_0_100.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/contador_0_100.bdf   ;         ;
 ; divisor_de_clock.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/divisor_de_clock.bdf ;         ;
 ; enable.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/enable.bdf           ;         ;
 ; projeto.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/projeto.bdf          ;         ;
 ; decod_bsd_7seg.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/decod_bsd_7seg.bdf   ;         ;
 ; mux_display.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/mux_display.bdf      ;         ;
+; seletor_7seg.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/seletor_7seg.bdf     ;         ;
 ; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf          ;         ;
 ; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_constant.inc         ;         ;
 ; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc           ;         ;
@@ -195,20 +196,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                        ;
 +---------------------------------------------+------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 39                                                                           ;
+; Estimated Total logic elements              ; 45                                                                           ;
 ;                                             ;                                                                              ;
-; Total combinational functions               ; 39                                                                           ;
+; Total combinational functions               ; 45                                                                           ;
 ; Logic element usage by number of LUT inputs ;                                                                              ;
 ;     -- 4 input functions                    ; 8                                                                            ;
 ;     -- 3 input functions                    ; 0                                                                            ;
-;     -- <=2 input functions                  ; 31                                                                           ;
+;     -- <=2 input functions                  ; 37                                                                           ;
 ;                                             ;                                                                              ;
 ; Logic elements by mode                      ;                                                                              ;
-;     -- normal mode                          ; 14                                                                           ;
+;     -- normal mode                          ; 20                                                                           ;
 ;     -- arithmetic mode                      ; 25                                                                           ;
 ;                                             ;                                                                              ;
-; Total registers                             ; 27                                                                           ;
-;     -- Dedicated logic registers            ; 27                                                                           ;
+; Total registers                             ; 29                                                                           ;
+;     -- Dedicated logic registers            ; 29                                                                           ;
 ;     -- I/O registers                        ; 0                                                                            ;
 ;                                             ;                                                                              ;
 ; I/O pins                                    ; 13                                                                           ;
@@ -217,8 +218,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                              ;
 ; Maximum fan-out node                        ; divisor_de_clock:inst11|lpm_counter:inst|cntr_d2i:auto_generated|cout_actual ;
 ; Maximum fan-out                             ; 26                                                                           ;
-; Total fan-out                               ; 206                                                                          ;
-; Average fan-out                             ; 2.24                                                                         ;
+; Total fan-out                               ; 230                                                                          ;
+; Average fan-out                             ; 2.30                                                                         ;
 +---------------------------------------------+------------------------------------------------------------------------------+
 
 
@@ -227,25 +228,16 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                      ; Entity Name      ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+------------------+--------------+
-; |projeto                           ; 39 (1)              ; 27 (0)                    ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |projeto                                                                                 ; projeto          ; work         ;
+; |projeto                           ; 45 (1)              ; 29 (0)                    ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |projeto                                                                                 ; projeto          ; work         ;
 ;    |divisor_de_clock:inst11|       ; 36 (1)              ; 26 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11                                                         ; divisor_de_clock ; work         ;
 ;       |lpm_counter:inst|           ; 35 (0)              ; 25 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11|lpm_counter:inst                                        ; lpm_counter      ; work         ;
 ;          |cntr_d2i:auto_generated| ; 35 (27)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11|lpm_counter:inst|cntr_d2i:auto_generated                ; cntr_d2i         ; work         ;
 ;             |cmpr_dic:cmpr1|       ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11|lpm_counter:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1 ; cmpr_dic         ; work         ;
 ;    |enable:inst3|                  ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|enable:inst3                                                                    ; enable           ; work         ;
+;    |mux_display:inst5|             ; 5 (5)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|mux_display:inst5                                                               ; mux_display      ; work         ;
+;    |seletor_7seg:inst|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|seletor_7seg:inst                                                               ; seletor_7seg     ; work         ;
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; mux_display:inst1|inst                ; Stuck at VCC due to stuck port data_in ;
-; mux_display:inst1|inst9               ; Stuck at GND due to stuck port clock   ;
-; Total Number of Removed Registers = 2 ;                                        ;
-+---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -253,7 +245,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 27    ;
+; Total registers                              ; 29    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 25    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -296,20 +288,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 13                          ;
-; cycloneiii_ff         ; 27                          ;
+; cycloneiii_ff         ; 29                          ;
 ;     SLD               ; 25                          ;
-;     plain             ; 2                           ;
-; cycloneiii_lcell_comb ; 40                          ;
+;     plain             ; 4                           ;
+; cycloneiii_lcell_comb ; 49                          ;
 ;     arith             ; 25                          ;
 ;         2 data inputs ; 25                          ;
-;     normal            ; 15                          ;
-;         0 data inputs ; 3                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 2                           ;
+;     normal            ; 24                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 8                           ;
+;         2 data inputs ; 6                           ;
 ;         4 data inputs ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 3.32                        ;
+; Average LUT depth     ; 3.18                        ;
 +-----------------------+-----------------------------+
 
 
@@ -328,7 +320,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Jun 16 15:53:17 2021
+    Info: Processing started: Wed Jun 16 18:33:00 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto1 -c Projeto1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -348,9 +340,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file decod_b
     Info (12023): Found entity 1: decod_bsd_7seg
 Info (12021): Found 1 design units, including 1 entities, in source file mux_display.bdf
     Info (12023): Found entity 1: mux_display
+Info (12021): Found 1 design units, including 1 entities, in source file seletor_7seg.bdf
+    Info (12023): Found entity 1: seletor_7seg
 Info (12127): Elaborating entity "projeto" for the top level hierarchy
-Warning (275011): Block or symbol "NOT" of instance "inst2" overlaps another block or symbol
-Warning (275011): Block or symbol "NOT" of instance "inst5" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst1" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst4" overlaps another block or symbol
 Info (12128): Elaborating entity "enable" for hierarchy "enable:inst3"
 Info (12128): Elaborating entity "divisor_de_clock" for hierarchy "divisor_de_clock:inst11"
 Info (12128): Elaborating entity "LPM_COUNTER" for hierarchy "divisor_de_clock:inst11|LPM_COUNTER:inst"
@@ -364,32 +358,22 @@ Info (12128): Elaborating entity "cntr_d2i" for hierarchy "divisor_de_clock:inst
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_dic.tdf
     Info (12023): Found entity 1: cmpr_dic File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cmpr_dic.tdf Line: 23
 Info (12128): Elaborating entity "cmpr_dic" for hierarchy "divisor_de_clock:inst11|LPM_COUNTER:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1" File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cntr_d2i.tdf Line: 160
-Info (12128): Elaborating entity "decod_bsd_7seg" for hierarchy "decod_bsd_7seg:inst12"
+Info (12128): Elaborating entity "seletor_7seg" for hierarchy "seletor_7seg:inst"
+Info (12128): Elaborating entity "mux_display" for hierarchy "mux_display:inst5"
+Info (12128): Elaborating entity "decod_bsd_7seg" for hierarchy "decod_bsd_7seg:inst14"
 Warning (275008): Primitive "NOT" of instance "inst16" not used
-Info (12128): Elaborating entity "mux_display" for hierarchy "mux_display:inst1"
-Warning (275011): Block or symbol "DFF" of instance "inst9" overlaps another block or symbol
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "7seg_a" is stuck at VCC
-    Warning (13410): Pin "7seg_b" is stuck at VCC
-    Warning (13410): Pin "7seg_c" is stuck at VCC
-    Warning (13410): Pin "7seg_d" is stuck at VCC
-    Warning (13410): Pin "7seg_e" is stuck at VCC
-    Warning (13410): Pin "7seg_f" is stuck at VCC
-    Warning (13410): Pin "7seg_g" is stuck at VCC
-    Warning (13410): Pin "pin_name1" is stuck at VCC
-    Warning (13410): Pin "pin_name2" is stuck at GND
-    Warning (13410): Pin "pin_name3" is stuck at VCC
+Info (12128): Elaborating entity "contador_0_100" for hierarchy "contador_0_100:inst13"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 52 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 58 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 39 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info (21061): Implemented 45 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4755 megabytes
-    Info: Processing ended: Wed Jun 16 15:54:07 2021
-    Info: Elapsed time: 00:00:50
-    Info: Total CPU time (on all processors): 00:01:17
+    Info: Processing ended: Wed Jun 16 18:33:48 2021
+    Info: Elapsed time: 00:00:48
+    Info: Total CPU time (on all processors): 00:01:18
 
 
