@@ -7,3 +7,21 @@
 - implementar a chave de sentido da contagem.
 - botao de zerar contagem.
 - settar as portas da fpga.
+
+7seg: [link](https://www.profelectro.info/mapa-de-karnaugh-onlie-para-simplificacao-de-funcoes-booleanas-a-partir-da-tabela-da-verdade/)
+
+* a: ![image-20210616233159106](C:\Users\peddr\AppData\Roaming\Typora\typora-user-images\image-20210616233159106.png)
+
+* b: ![image-20210616233334205](C:\Users\peddr\AppData\Roaming\Typora\typora-user-images\image-20210616233334205.png)
+
+* c: ![image-20210616233626176](C:\Users\peddr\AppData\Roaming\Typora\typora-user-images\image-20210616233626176.png)
+
+* d: ![image-20210616233818998](C:\Users\peddr\AppData\Roaming\Typora\typora-user-images\image-20210616233818998.png)
+
+* e: ![image-20210616234019812](C:\Users\peddr\AppData\Roaming\Typora\typora-user-images\image-20210616234019812.png)
+
+* f: ![image-20210616234143544](C:\Users\peddr\AppData\Roaming\Typora\typora-user-images\image-20210616234143544.png)
+
+* g: ![image-20210616234244664](C:\Users\peddr\AppData\Roaming\Typora\typora-user-images\image-20210616234244664.png)
+
+  observações: o decod está na ordem ABCD, no qual o A é o algarismo mais significativo.

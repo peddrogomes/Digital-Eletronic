@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto1
-Wed Jun 16 18:33:48 2021
+Sat Jun 19 21:28:08 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -14,10 +14,11 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: divisor_de_clock:inst11|LPM_COUNTER:inst
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: DivisorRap:inst15|LPM_COUNTER:inst
+ 10. Parameter Settings for User Entity Instance: divisor_de_clock:inst11|LPM_COUNTER:inst
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -44,16 +45,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 16 18:33:48 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jun 19 21:28:08 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto1                                    ;
 ; Top-level Entity Name              ; projeto                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 45                                          ;
-;     Total combinational functions  ; 45                                          ;
-;     Dedicated logic registers      ; 29                                          ;
-; Total registers                    ; 29                                          ;
-; Total pins                         ; 13                                          ;
+; Total logic elements               ; 126                                         ;
+;     Total combinational functions  ; 126                                         ;
+;     Dedicated logic registers      ; 53                                          ;
+; Total registers                    ; 53                                          ;
+; Total pins                         ; 17                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -164,79 +165,102 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                              ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
-; contador_0_100.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/contador_0_100.bdf   ;         ;
-; divisor_de_clock.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/divisor_de_clock.bdf ;         ;
-; enable.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/enable.bdf           ;         ;
-; projeto.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/projeto.bdf          ;         ;
-; decod_bsd_7seg.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/decod_bsd_7seg.bdf   ;         ;
-; mux_display.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/mux_display.bdf      ;         ;
-; seletor_7seg.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/seletor_7seg.bdf     ;         ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf          ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_constant.inc         ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc           ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc          ;         ;
-; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cmpconst.inc             ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_compare.inc          ;         ;
-; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.inc          ;         ;
-; dffeea.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/dffeea.inc               ;         ;
-; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_counter_stratix.inc  ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc           ;         ;
-; db/cntr_d2i.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cntr_d2i.tdf      ;         ;
-; db/cmpr_dic.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cmpr_dic.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                       ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
+; DivisorRap.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/DivisorRap.bdf          ;         ;
+; somador_e_subtrator.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/somador_e_subtrator.bdf ;         ;
+; divisor_de_clock.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/divisor_de_clock.bdf    ;         ;
+; projeto.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/projeto.bdf             ;         ;
+; decod_bsd_7seg.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/decod_bsd_7seg.bdf      ;         ;
+; mux_display.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/mux_display.bdf         ;         ;
+; seletor_7seg.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/seletor_7seg.bdf        ;         ;
+; som_sub_4bits.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/som_sub_4bits.bdf       ;         ;
+; somador_condicional.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/somador_condicional.bdf ;         ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf             ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_constant.inc            ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc              ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc             ;         ;
+; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cmpconst.inc                ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_compare.inc             ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.inc             ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/dffeea.inc                  ;         ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_counter_stratix.inc     ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc              ;         ;
+; db/cntr_9cg.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cntr_9cg.tdf         ;         ;
+; db/cntr_d2i.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cntr_d2i.tdf         ;         ;
+; db/cmpr_dic.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cmpr_dic.tdf         ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                                ;
-+---------------------------------------------+------------------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                        ;
-+---------------------------------------------+------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 45                                                                           ;
-;                                             ;                                                                              ;
-; Total combinational functions               ; 45                                                                           ;
-; Logic element usage by number of LUT inputs ;                                                                              ;
-;     -- 4 input functions                    ; 8                                                                            ;
-;     -- 3 input functions                    ; 0                                                                            ;
-;     -- <=2 input functions                  ; 37                                                                           ;
-;                                             ;                                                                              ;
-; Logic elements by mode                      ;                                                                              ;
-;     -- normal mode                          ; 20                                                                           ;
-;     -- arithmetic mode                      ; 25                                                                           ;
-;                                             ;                                                                              ;
-; Total registers                             ; 29                                                                           ;
-;     -- Dedicated logic registers            ; 29                                                                           ;
-;     -- I/O registers                        ; 0                                                                            ;
-;                                             ;                                                                              ;
-; I/O pins                                    ; 13                                                                           ;
-;                                             ;                                                                              ;
-; Embedded Multiplier 9-bit elements          ; 0                                                                            ;
-;                                             ;                                                                              ;
-; Maximum fan-out node                        ; divisor_de_clock:inst11|lpm_counter:inst|cntr_d2i:auto_generated|cout_actual ;
-; Maximum fan-out                             ; 26                                                                           ;
-; Total fan-out                               ; 230                                                                          ;
-; Average fan-out                             ; 2.30                                                                         ;
-+---------------------------------------------+------------------------------------------------------------------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 126       ;
+;                                             ;           ;
+; Total combinational functions               ; 126       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 70        ;
+;     -- 3 input functions                    ; 2         ;
+;     -- <=2 input functions                  ; 54        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 93        ;
+;     -- arithmetic mode                      ; 33        ;
+;                                             ;           ;
+; Total registers                             ; 53        ;
+;     -- Dedicated logic registers            ; 53        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 17        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 33        ;
+; Total fan-out                               ; 583       ;
+; Average fan-out                             ; 2.74      ;
++---------------------------------------------+-----------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                        ;
-+------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+------------------+--------------+
-; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                      ; Entity Name      ; Library Name ;
-+------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+------------------+--------------+
-; |projeto                           ; 45 (1)              ; 29 (0)                    ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |projeto                                                                                 ; projeto          ; work         ;
-;    |divisor_de_clock:inst11|       ; 36 (1)              ; 26 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11                                                         ; divisor_de_clock ; work         ;
-;       |lpm_counter:inst|           ; 35 (0)              ; 25 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11|lpm_counter:inst                                        ; lpm_counter      ; work         ;
-;          |cntr_d2i:auto_generated| ; 35 (27)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11|lpm_counter:inst|cntr_d2i:auto_generated                ; cntr_d2i         ; work         ;
-;             |cmpr_dic:cmpr1|       ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11|lpm_counter:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1 ; cmpr_dic         ; work         ;
-;    |enable:inst3|                  ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|enable:inst3                                                                    ; enable           ; work         ;
-;    |mux_display:inst5|             ; 5 (5)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|mux_display:inst5                                                               ; mux_display      ; work         ;
-;    |seletor_7seg:inst|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|seletor_7seg:inst                                                               ; seletor_7seg     ; work         ;
-+------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                            ;
++-------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node          ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                      ; Entity Name         ; Library Name ;
++-------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+---------------------+--------------+
+; |projeto                            ; 126 (6)             ; 53 (0)                    ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |projeto                                                                                 ; projeto             ; work         ;
+;    |DivisorRap:inst15|              ; 10 (1)              ; 9 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|DivisorRap:inst15                                                               ; DivisorRap          ; work         ;
+;       |lpm_counter:inst|            ; 9 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|DivisorRap:inst15|lpm_counter:inst                                              ; lpm_counter         ; work         ;
+;          |cntr_9cg:auto_generated|  ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|DivisorRap:inst15|lpm_counter:inst|cntr_9cg:auto_generated                      ; cntr_9cg            ; work         ;
+;    |divisor_de_clock:inst11|        ; 36 (1)              ; 26 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11                                                         ; divisor_de_clock    ; work         ;
+;       |lpm_counter:inst|            ; 35 (0)              ; 25 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11|lpm_counter:inst                                        ; lpm_counter         ; work         ;
+;          |cntr_d2i:auto_generated|  ; 35 (27)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11|lpm_counter:inst|cntr_d2i:auto_generated                ; cntr_d2i            ; work         ;
+;             |cmpr_dic:cmpr1|        ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11|lpm_counter:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1 ; cmpr_dic            ; work         ;
+;    |mux_display:inst5|              ; 5 (5)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|mux_display:inst5                                                               ; mux_display         ; work         ;
+;    |seletor_7seg:inst10|            ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|seletor_7seg:inst10                                                             ; seletor_7seg        ; work         ;
+;    |seletor_7seg:inst12|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|seletor_7seg:inst12                                                             ; seletor_7seg        ; work         ;
+;    |seletor_7seg:inst6|             ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|seletor_7seg:inst6                                                              ; seletor_7seg        ; work         ;
+;    |seletor_7seg:inst7|             ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|seletor_7seg:inst7                                                              ; seletor_7seg        ; work         ;
+;    |seletor_7seg:inst8|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|seletor_7seg:inst8                                                              ; seletor_7seg        ; work         ;
+;    |seletor_7seg:inst9|             ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|seletor_7seg:inst9                                                              ; seletor_7seg        ; work         ;
+;    |seletor_7seg:inst|              ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|seletor_7seg:inst                                                               ; seletor_7seg        ; work         ;
+;    |somador_condicional:inst13|     ; 7 (6)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst13                                                      ; somador_condicional ; work         ;
+;       |som_sub_4bits:inst|          ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst13|som_sub_4bits:inst                                   ; som_sub_4bits       ; work         ;
+;          |somador_e_subtrator:inst| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst13|som_sub_4bits:inst|somador_e_subtrator:inst          ; somador_e_subtrator ; work         ;
+;    |somador_condicional:inst16|     ; 8 (7)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst16                                                      ; somador_condicional ; work         ;
+;       |som_sub_4bits:inst|          ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst16|som_sub_4bits:inst                                   ; som_sub_4bits       ; work         ;
+;          |somador_e_subtrator:inst| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst16|som_sub_4bits:inst|somador_e_subtrator:inst          ; somador_e_subtrator ; work         ;
+;    |somador_condicional:inst21|     ; 7 (6)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst21                                                      ; somador_condicional ; work         ;
+;       |som_sub_4bits:inst|          ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst21|som_sub_4bits:inst                                   ; som_sub_4bits       ; work         ;
+;          |somador_e_subtrator:inst| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst21|som_sub_4bits:inst|somador_e_subtrator:inst          ; somador_e_subtrator ; work         ;
+;    |somador_condicional:inst23|     ; 7 (6)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst23                                                      ; somador_condicional ; work         ;
+;       |som_sub_4bits:inst|          ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst23|som_sub_4bits:inst                                   ; som_sub_4bits       ; work         ;
+;          |somador_e_subtrator:inst| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst23|som_sub_4bits:inst|somador_e_subtrator:inst          ; somador_e_subtrator ; work         ;
++-------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -245,14 +269,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 29    ;
+; Total registers                              ; 53    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 25    ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 16    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivisorRap:inst15|LPM_COUNTER:inst ;
++------------------------+-------------------+------------------------------------+
+; Parameter Name         ; Value             ; Type                               ;
++------------------------+-------------------+------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                       ;
+; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                     ;
+; LPM_WIDTH              ; 8                 ; Untyped                            ;
+; LPM_DIRECTION          ; DEFAULT           ; Untyped                            ;
+; LPM_MODULUS            ; 0                 ; Untyped                            ;
+; LPM_AVALUE             ; UNUSED            ; Untyped                            ;
+; LPM_SVALUE             ; UNUSED            ; Untyped                            ;
+; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                            ;
+; DEVICE_FAMILY          ; Cyclone IV E      ; Untyped                            ;
+; CARRY_CHAIN            ; MANUAL            ; Untyped                            ;
+; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                 ;
+; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                 ;
+; CARRY_CNT_EN           ; SMART             ; Untyped                            ;
+; LABWIDE_SCLR           ; ON                ; Untyped                            ;
+; USE_NEW_VERSION        ; TRUE              ; Untyped                            ;
+; CBXI_PARAMETER         ; cntr_9cg          ; Untyped                            ;
++------------------------+-------------------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------+
@@ -287,21 +338,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 13                          ;
-; cycloneiii_ff         ; 29                          ;
+; boundary_port         ; 17                          ;
+; cycloneiii_ff         ; 53                          ;
+;     CLR               ; 16                          ;
 ;     SLD               ; 25                          ;
-;     plain             ; 4                           ;
-; cycloneiii_lcell_comb ; 49                          ;
-;     arith             ; 25                          ;
-;         2 data inputs ; 25                          ;
-;     normal            ; 24                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 8                           ;
-;         2 data inputs ; 6                           ;
-;         4 data inputs ; 8                           ;
+;     plain             ; 12                          ;
+; cycloneiii_lcell_comb ; 136                         ;
+;     arith             ; 33                          ;
+;         2 data inputs ; 33                          ;
+;     normal            ; 103                         ;
+;         0 data inputs ; 3                           ;
+;         1 data inputs ; 18                          ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 70                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 3.18                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.16                        ;
 +-----------------------+-----------------------------+
 
 
@@ -310,7 +363,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -320,10 +373,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Jun 16 18:33:00 2021
+    Info: Processing started: Sat Jun 19 21:27:11 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto1 -c Projeto1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file block1.bdf
+    Info (12023): Found entity 1: Block1
+Info (12021): Found 1 design units, including 1 entities, in source file contador_novo.bdf
+    Info (12023): Found entity 1: contador_novo
+Info (12021): Found 1 design units, including 1 entities, in source file divisorrap.bdf
+    Info (12023): Found entity 1: DivisorRap
 Info (12021): Found 1 design units, including 1 entities, in source file contador_de_4bits.bdf
     Info (12023): Found entity 1: contador_de_4bits
 Info (12021): Found 1 design units, including 1 entities, in source file contador_0_100.bdf
@@ -342,10 +401,46 @@ Info (12021): Found 1 design units, including 1 entities, in source file mux_dis
     Info (12023): Found entity 1: mux_display
 Info (12021): Found 1 design units, including 1 entities, in source file seletor_7seg.bdf
     Info (12023): Found entity 1: seletor_7seg
+Info (12021): Found 1 design units, including 1 entities, in source file flipflop_jk.bdf
+    Info (12023): Found entity 1: flipflop_jk
+Info (12021): Found 1 design units, including 1 entities, in source file contador_de_doido.bdf
+    Info (12023): Found entity 1: contador_de_doido
+Info (12021): Found 1 design units, including 1 entities, in source file flipflop_jk2.bdf
+    Info (12023): Found entity 1: flipflop_jk2
+Info (12021): Found 1 design units, including 1 entities, in source file som_sub_4bits.bdf
+    Info (12023): Found entity 1: som_sub_4bits
+Info (12021): Found 1 design units, including 1 entities, in source file somador_condicional.bdf
+    Info (12023): Found entity 1: somador_condicional
 Info (12127): Elaborating entity "projeto" for the top level hierarchy
 Warning (275011): Block or symbol "NOT" of instance "inst1" overlaps another block or symbol
 Warning (275011): Block or symbol "NOT" of instance "inst4" overlaps another block or symbol
-Info (12128): Elaborating entity "enable" for hierarchy "enable:inst3"
+Warning (275011): Block or symbol "NOT" of instance "inst36" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst38" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst40" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst53" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst56" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst58" overlaps another block or symbol
+Warning (275009): Pin "Botao" not connected
+Info (12128): Elaborating entity "seletor_7seg" for hierarchy "seletor_7seg:inst"
+Info (12128): Elaborating entity "mux_display" for hierarchy "mux_display:inst5"
+Info (12128): Elaborating entity "DivisorRap" for hierarchy "DivisorRap:inst15"
+Info (12128): Elaborating entity "LPM_COUNTER" for hierarchy "DivisorRap:inst15|LPM_COUNTER:inst"
+Info (12130): Elaborated megafunction instantiation "DivisorRap:inst15|LPM_COUNTER:inst"
+Info (12133): Instantiated megafunction "DivisorRap:inst15|LPM_COUNTER:inst" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "8"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_9cg.tdf
+    Info (12023): Found entity 1: cntr_9cg File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cntr_9cg.tdf Line: 26
+Info (12128): Elaborating entity "cntr_9cg" for hierarchy "DivisorRap:inst15|LPM_COUNTER:inst|cntr_9cg:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf Line: 259
+Info (12128): Elaborating entity "decod_bsd_7seg" for hierarchy "decod_bsd_7seg:inst25"
+Warning (275011): Block or symbol "AND2" of instance "inst44" overlaps another block or symbol
+Warning (275008): Primitive "AND2" of instance "inst" not used
+Warning (275008): Primitive "AND2" of instance "inst11" not used
+Warning (275008): Primitive "AND2" of instance "inst2" not used
+Warning (275008): Primitive "AND2" of instance "inst23" not used
+Warning (275008): Primitive "AND2" of instance "inst3" not used
+Info (12128): Elaborating entity "somador_condicional" for hierarchy "somador_condicional:inst16"
+Info (12128): Elaborating entity "som_sub_4bits" for hierarchy "somador_condicional:inst16|som_sub_4bits:inst"
+Info (12128): Elaborating entity "somador_e_subtrator" for hierarchy "somador_condicional:inst16|som_sub_4bits:inst|somador_e_subtrator:inst3"
 Info (12128): Elaborating entity "divisor_de_clock" for hierarchy "divisor_de_clock:inst11"
 Info (12128): Elaborating entity "LPM_COUNTER" for hierarchy "divisor_de_clock:inst11|LPM_COUNTER:inst"
 Info (12130): Elaborated megafunction instantiation "divisor_de_clock:inst11|LPM_COUNTER:inst"
@@ -358,22 +453,19 @@ Info (12128): Elaborating entity "cntr_d2i" for hierarchy "divisor_de_clock:inst
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_dic.tdf
     Info (12023): Found entity 1: cmpr_dic File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cmpr_dic.tdf Line: 23
 Info (12128): Elaborating entity "cmpr_dic" for hierarchy "divisor_de_clock:inst11|LPM_COUNTER:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1" File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cntr_d2i.tdf Line: 160
-Info (12128): Elaborating entity "seletor_7seg" for hierarchy "seletor_7seg:inst"
-Info (12128): Elaborating entity "mux_display" for hierarchy "mux_display:inst5"
-Info (12128): Elaborating entity "decod_bsd_7seg" for hierarchy "decod_bsd_7seg:inst14"
-Warning (275008): Primitive "NOT" of instance "inst16" not used
-Info (12128): Elaborating entity "contador_0_100" for hierarchy "contador_0_100:inst13"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 58 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 45 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4755 megabytes
-    Info: Processing ended: Wed Jun 16 18:33:48 2021
-    Info: Elapsed time: 00:00:48
-    Info: Total CPU time (on all processors): 00:01:18
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Botao"
+Info (21057): Implemented 143 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 126 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4760 megabytes
+    Info: Processing ended: Sat Jun 19 21:28:08 2021
+    Info: Elapsed time: 00:00:57
+    Info: Total CPU time (on all processors): 00:01:20
 
 

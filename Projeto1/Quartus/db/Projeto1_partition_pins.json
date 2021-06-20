@@ -4,10 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "LED",
-					"strict" : false
-				},
-				{
 					"name" : "7seg_a",
 					"strict" : false
 				},
@@ -48,7 +44,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "Botao",
+					"name" : "LED4",
+					"strict" : false
+				},
+				{
+					"name" : "LED1",
+					"strict" : false
+				},
+				{
+					"name" : "LED2",
+					"strict" : false
+				},
+				{
+					"name" : "LED3",
+					"strict" : false
+				},
+				{
+					"name" : "SW_MODO",
 					"strict" : false
 				},
 				{
