@@ -62,9 +62,16 @@ set_location_assignment PIN_124 -to 7seg_g
 set_location_assignment PIN_135 -to pin_name1
 set_location_assignment PIN_133 -to pin_name2
 set_location_assignment PIN_136 -to pin_name3
+set_location_assignment PIN_87 -to LED1
+set_location_assignment PIN_86 -to LED2
+set_location_assignment PIN_85 -to LED3
+set_location_assignment PIN_84 -to LED4
+set_location_assignment PIN_89 -to SW_MODO
+set_global_assignment -name BDF_FILE seletor_display.bdf
+set_global_assignment -name BDF_FILE mux_7seg.bdf
+set_global_assignment -name BDF_FILE Divisor_de_clock2.bdf
 set_global_assignment -name BDF_FILE Block1.bdf
 set_global_assignment -name BDF_FILE contador_novo.bdf
-set_global_assignment -name BDF_FILE DivisorRap.bdf
 set_global_assignment -name BDF_FILE contador_de_4bits.bdf
 set_global_assignment -name BDF_FILE contador_0_100.bdf
 set_global_assignment -name BDF_FILE somador_e_subtrator.bdf
@@ -72,19 +79,9 @@ set_global_assignment -name BDF_FILE divisor_de_clock.bdf
 set_global_assignment -name BDF_FILE enable.bdf
 set_global_assignment -name BDF_FILE projeto.bdf
 set_global_assignment -name BDF_FILE decod_bsd_7seg.bdf
-set_global_assignment -name BDF_FILE mux_display.bdf
-set_global_assignment -name BDF_FILE seletor_7seg.bdf
-set_location_assignment PIN_90 -to reset
-set_location_assignment PIN_87 -to LED1
-set_location_assignment PIN_86 -to LED2
-set_location_assignment PIN_85 -to LED3
-set_location_assignment PIN_84 -to LED4
-set_global_assignment -name BDF_FILE flipflop_jk.bdf
 set_global_assignment -name BDF_FILE contador_de_doido.bdf
-set_global_assignment -name BDF_FILE flipflop_jk2.bdf
 set_global_assignment -name BDF_FILE som_sub_4bits.bdf
 set_global_assignment -name BDF_FILE somador_condicional.bdf
-set_location_assignment PIN_91 -to SW_MODO
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

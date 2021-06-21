@@ -22,7 +22,7 @@ https://fpgasoftware.intel.com/eula.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 16 16 144 112)
-	(text "mux_display" (rect 5 0 80 19)(font "Intel Clear" (font_size 8)))
+	(text "seletor_display" (rect 5 0 95 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
 	(port
 		(pt 0 32)

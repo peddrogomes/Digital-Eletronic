@@ -241,7 +241,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(parameter
 		"LPM_WIDTH"
-		"8"
+		"10"
 		"Width of I/O, any integer > 0"
 	)
 	(parameter

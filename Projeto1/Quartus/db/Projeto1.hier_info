@@ -1,9 +1,16 @@
 |projeto
 7seg_a <= inst14.DB_MAX_OUTPUT_PORT_TYPE
-CLK => DivisorRap:inst15.clock_in
+CLK => Divisor_de_clock2:inst.clock_in
 CLK => divisor_de_clock:inst11.CLKIN
+SW_MODO => somador_condicional:inst67.Modo
 SW_MODO => inst62.IN0
-SW_MODO => inst60.IN0
+SW_MODO => somador_condicional:inst65.Modo
+SW_MODO => somador_condicional:inst66.Modo
+SW_MODO => inst28.IN0
+SW_MODO => somador_condicional:inst64.Modo
+Botao_de_reset => somador_condicional:inst66.sw_reset
+Botao_de_reset => somador_condicional:inst65.sw_reset
+Botao_de_reset => somador_condicional:inst67.sw_reset
 7seg_b <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 7seg_c <= inst24.DB_MAX_OUTPUT_PORT_TYPE
 7seg_d <= inst20.DB_MAX_OUTPUT_PORT_TYPE
@@ -13,14 +20,14 @@ SW_MODO => inst60.IN0
 pin_name1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 pin_name2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 pin_name3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LED4 <= somador_condicional:inst13.Q03
-LED1 <= somador_condicional:inst13.Q00
-LED2 <= somador_condicional:inst13.Q01
-LED3 <= somador_condicional:inst13.Q02
-Botao => ~NO_FANOUT~
+LED4 <= somador_condicional:inst64.Q03
+LED1 <= somador_condicional:inst64.Q00
+LED2 <= somador_condicional:inst64.Q01
+LED3 <= somador_condicional:inst64.Q02
+Botao_de_parada => ~NO_FANOUT~
 
 
-|projeto|seletor_7seg:inst
+|projeto|mux_7seg:inst6
 7seg_selector <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 selector2 => inst1.IN0
 7seg2 => inst1.IN1
@@ -30,20 +37,20 @@ selector1 => inst.IN0
 7seg1 => inst.IN1
 
 
-|projeto|mux_display:inst5
+|projeto|seletor_display:inst5
 7seg_1 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 CLK_I => inst2.CLK
 7seg_2 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 7seg_3 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto|DivisorRap:inst15
+|projeto|Divisor_de_clock2:inst
 clock_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 clock_in => LPM_COUNTER:inst.clock
 
 
-|projeto|DivisorRap:inst15|LPM_COUNTER:inst
-clock => cntr_9cg:auto_generated.clock
+|projeto|Divisor_de_clock2:inst|LPM_COUNTER:inst
+clock => cntr_idg:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
 updown => ~NO_FANOUT~
@@ -63,6 +70,8 @@ data[4] => ~NO_FANOUT~
 data[5] => ~NO_FANOUT~
 data[6] => ~NO_FANOUT~
 data[7] => ~NO_FANOUT~
+data[8] => ~NO_FANOUT~
+data[9] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
 q[0] <= <GND>
 q[1] <= <GND>
@@ -72,7 +81,9 @@ q[4] <= <GND>
 q[5] <= <GND>
 q[6] <= <GND>
 q[7] <= <GND>
-cout <= cntr_9cg:auto_generated.cout
+q[8] <= <GND>
+q[9] <= <GND>
+cout <= cntr_idg:auto_generated.cout
 eq[0] <= <GND>
 eq[1] <= <GND>
 eq[2] <= <GND>
@@ -91,7 +102,9 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|projeto|DivisorRap:inst15|LPM_COUNTER:inst|cntr_9cg:auto_generated
+|projeto|Divisor_de_clock2:inst|LPM_COUNTER:inst|cntr_idg:auto_generated
+clock => counter_reg_bit[9].CLK
+clock => counter_reg_bit[8].CLK
 clock => counter_reg_bit[7].CLK
 clock => counter_reg_bit[6].CLK
 clock => counter_reg_bit[5].CLK
@@ -131,7 +144,7 @@ f_o <= inst25.DB_MAX_OUTPUT_PORT_TYPE
 g_o <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto|somador_condicional:inst16
+|projeto|somador_condicional:inst67
 Q00 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Q03 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 Clk_in => inst5.CLK
@@ -142,9 +155,10 @@ Q01 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Q02 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 Modo => som_sub_4bits:inst.Mode
 Carry <= inst140.DB_MAX_OUTPUT_PORT_TYPE
+sw_reset => ~NO_FANOUT~
 
 
-|projeto|somador_condicional:inst16|som_sub_4bits:inst
+|projeto|somador_condicional:inst67|som_sub_4bits:inst
 C_out <= somador_e_subtrator:inst3.C_out
 A3 => somador_e_subtrator:inst3.a
 B3 => somador_e_subtrator:inst3.b
@@ -164,7 +178,7 @@ S2 <= somador_e_subtrator:inst2.S
 S3 <= somador_e_subtrator:inst3.S
 
 
-|projeto|somador_condicional:inst16|som_sub_4bits:inst|somador_e_subtrator:inst3
+|projeto|somador_condicional:inst67|som_sub_4bits:inst|somador_e_subtrator:inst3
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
@@ -178,7 +192,7 @@ C_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 mode => inst7.IN1
 
 
-|projeto|somador_condicional:inst16|som_sub_4bits:inst|somador_e_subtrator:inst2
+|projeto|somador_condicional:inst67|som_sub_4bits:inst|somador_e_subtrator:inst2
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
@@ -192,7 +206,7 @@ C_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 mode => inst7.IN1
 
 
-|projeto|somador_condicional:inst16|som_sub_4bits:inst|somador_e_subtrator:inst
+|projeto|somador_condicional:inst67|som_sub_4bits:inst|somador_e_subtrator:inst
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
@@ -206,7 +220,7 @@ C_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 mode => inst7.IN1
 
 
-|projeto|somador_condicional:inst16|som_sub_4bits:inst|somador_e_subtrator:inst1
+|projeto|somador_condicional:inst67|som_sub_4bits:inst|somador_e_subtrator:inst1
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
@@ -220,7 +234,7 @@ C_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 mode => inst7.IN1
 
 
-|projeto|somador_condicional:inst23
+|projeto|somador_condicional:inst65
 Q00 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Q03 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 Clk_in => inst5.CLK
@@ -231,9 +245,10 @@ Q01 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Q02 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 Modo => som_sub_4bits:inst.Mode
 Carry <= inst140.DB_MAX_OUTPUT_PORT_TYPE
+sw_reset => ~NO_FANOUT~
 
 
-|projeto|somador_condicional:inst23|som_sub_4bits:inst
+|projeto|somador_condicional:inst65|som_sub_4bits:inst
 C_out <= somador_e_subtrator:inst3.C_out
 A3 => somador_e_subtrator:inst3.a
 B3 => somador_e_subtrator:inst3.b
@@ -253,7 +268,7 @@ S2 <= somador_e_subtrator:inst2.S
 S3 <= somador_e_subtrator:inst3.S
 
 
-|projeto|somador_condicional:inst23|som_sub_4bits:inst|somador_e_subtrator:inst3
+|projeto|somador_condicional:inst65|som_sub_4bits:inst|somador_e_subtrator:inst3
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
@@ -267,7 +282,7 @@ C_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 mode => inst7.IN1
 
 
-|projeto|somador_condicional:inst23|som_sub_4bits:inst|somador_e_subtrator:inst2
+|projeto|somador_condicional:inst65|som_sub_4bits:inst|somador_e_subtrator:inst2
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
@@ -281,7 +296,7 @@ C_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 mode => inst7.IN1
 
 
-|projeto|somador_condicional:inst23|som_sub_4bits:inst|somador_e_subtrator:inst
+|projeto|somador_condicional:inst65|som_sub_4bits:inst|somador_e_subtrator:inst
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
@@ -295,7 +310,7 @@ C_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 mode => inst7.IN1
 
 
-|projeto|somador_condicional:inst23|som_sub_4bits:inst|somador_e_subtrator:inst1
+|projeto|somador_condicional:inst65|som_sub_4bits:inst|somador_e_subtrator:inst1
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
@@ -309,7 +324,7 @@ C_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 mode => inst7.IN1
 
 
-|projeto|somador_condicional:inst21
+|projeto|somador_condicional:inst66
 Q00 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Q03 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 Clk_in => inst5.CLK
@@ -320,9 +335,10 @@ Q01 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Q02 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 Modo => som_sub_4bits:inst.Mode
 Carry <= inst140.DB_MAX_OUTPUT_PORT_TYPE
+sw_reset => ~NO_FANOUT~
 
 
-|projeto|somador_condicional:inst21|som_sub_4bits:inst
+|projeto|somador_condicional:inst66|som_sub_4bits:inst
 C_out <= somador_e_subtrator:inst3.C_out
 A3 => somador_e_subtrator:inst3.a
 B3 => somador_e_subtrator:inst3.b
@@ -342,7 +358,7 @@ S2 <= somador_e_subtrator:inst2.S
 S3 <= somador_e_subtrator:inst3.S
 
 
-|projeto|somador_condicional:inst21|som_sub_4bits:inst|somador_e_subtrator:inst3
+|projeto|somador_condicional:inst66|som_sub_4bits:inst|somador_e_subtrator:inst3
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
@@ -356,7 +372,7 @@ C_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 mode => inst7.IN1
 
 
-|projeto|somador_condicional:inst21|som_sub_4bits:inst|somador_e_subtrator:inst2
+|projeto|somador_condicional:inst66|som_sub_4bits:inst|somador_e_subtrator:inst2
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
@@ -370,7 +386,7 @@ C_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 mode => inst7.IN1
 
 
-|projeto|somador_condicional:inst21|som_sub_4bits:inst|somador_e_subtrator:inst
+|projeto|somador_condicional:inst66|som_sub_4bits:inst|somador_e_subtrator:inst
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
@@ -384,7 +400,7 @@ C_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 mode => inst7.IN1
 
 
-|projeto|somador_condicional:inst21|som_sub_4bits:inst|somador_e_subtrator:inst1
+|projeto|somador_condicional:inst66|som_sub_4bits:inst|somador_e_subtrator:inst1
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
@@ -404,7 +420,7 @@ CLKIN => LPM_COUNTER:inst.clock
 
 
 |projeto|divisor_de_clock:inst11|LPM_COUNTER:inst
-clock => cntr_d2i:auto_generated.clock
+clock => cntr_g2i:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
 updown => ~NO_FANOUT~
@@ -467,7 +483,7 @@ q[21] <= <GND>
 q[22] <= <GND>
 q[23] <= <GND>
 q[24] <= <GND>
-cout <= cntr_d2i:auto_generated.cout
+cout <= cntr_g2i:auto_generated.cout
 eq[0] <= <GND>
 eq[1] <= <GND>
 eq[2] <= <GND>
@@ -486,7 +502,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|projeto|divisor_de_clock:inst11|LPM_COUNTER:inst|cntr_d2i:auto_generated
+|projeto|divisor_de_clock:inst11|LPM_COUNTER:inst|cntr_g2i:auto_generated
 clock => counter_reg_bit[24].CLK
 clock => counter_reg_bit[23].CLK
 clock => counter_reg_bit[22].CLK
@@ -515,7 +531,7 @@ clock => counter_reg_bit[0].CLK
 cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto|divisor_de_clock:inst11|LPM_COUNTER:inst|cntr_d2i:auto_generated|cmpr_dic:cmpr1
+|projeto|divisor_de_clock:inst11|LPM_COUNTER:inst|cntr_g2i:auto_generated|cmpr_dic:cmpr1
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[4].IN0
 dataa[1] => data_wire[4].IN0
@@ -625,7 +641,7 @@ f_o <= inst25.DB_MAX_OUTPUT_PORT_TYPE
 g_o <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto|seletor_7seg:inst6
+|projeto|mux_7seg:inst7
 7seg_selector <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 selector2 => inst1.IN0
 7seg2 => inst1.IN1
@@ -635,7 +651,7 @@ selector1 => inst.IN0
 7seg1 => inst.IN1
 
 
-|projeto|seletor_7seg:inst7
+|projeto|mux_7seg:inst8
 7seg_selector <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 selector2 => inst1.IN0
 7seg2 => inst1.IN1
@@ -645,7 +661,7 @@ selector1 => inst.IN0
 7seg1 => inst.IN1
 
 
-|projeto|seletor_7seg:inst8
+|projeto|mux_7seg:inst9
 7seg_selector <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 selector2 => inst1.IN0
 7seg2 => inst1.IN1
@@ -655,7 +671,7 @@ selector1 => inst.IN0
 7seg1 => inst.IN1
 
 
-|projeto|seletor_7seg:inst9
+|projeto|mux_7seg:inst10
 7seg_selector <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 selector2 => inst1.IN0
 7seg2 => inst1.IN1
@@ -665,7 +681,7 @@ selector1 => inst.IN0
 7seg1 => inst.IN1
 
 
-|projeto|seletor_7seg:inst10
+|projeto|mux_7seg:inst12
 7seg_selector <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 selector2 => inst1.IN0
 7seg2 => inst1.IN1
@@ -675,7 +691,7 @@ selector1 => inst.IN0
 7seg1 => inst.IN1
 
 
-|projeto|seletor_7seg:inst12
+|projeto|mux_7seg:inst15
 7seg_selector <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 selector2 => inst1.IN0
 7seg2 => inst1.IN1
@@ -685,7 +701,7 @@ selector1 => inst.IN0
 7seg1 => inst.IN1
 
 
-|projeto|somador_condicional:inst13
+|projeto|somador_condicional:inst64
 Q00 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Q03 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 Clk_in => inst5.CLK
@@ -696,9 +712,10 @@ Q01 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Q02 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 Modo => som_sub_4bits:inst.Mode
 Carry <= inst140.DB_MAX_OUTPUT_PORT_TYPE
+sw_reset => ~NO_FANOUT~
 
 
-|projeto|somador_condicional:inst13|som_sub_4bits:inst
+|projeto|somador_condicional:inst64|som_sub_4bits:inst
 C_out <= somador_e_subtrator:inst3.C_out
 A3 => somador_e_subtrator:inst3.a
 B3 => somador_e_subtrator:inst3.b
@@ -718,7 +735,7 @@ S2 <= somador_e_subtrator:inst2.S
 S3 <= somador_e_subtrator:inst3.S
 
 
-|projeto|somador_condicional:inst13|som_sub_4bits:inst|somador_e_subtrator:inst3
+|projeto|somador_condicional:inst64|som_sub_4bits:inst|somador_e_subtrator:inst3
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
@@ -732,7 +749,7 @@ C_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 mode => inst7.IN1
 
 
-|projeto|somador_condicional:inst13|som_sub_4bits:inst|somador_e_subtrator:inst2
+|projeto|somador_condicional:inst64|som_sub_4bits:inst|somador_e_subtrator:inst2
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
@@ -746,7 +763,7 @@ C_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 mode => inst7.IN1
 
 
-|projeto|somador_condicional:inst13|som_sub_4bits:inst|somador_e_subtrator:inst
+|projeto|somador_condicional:inst64|som_sub_4bits:inst|somador_e_subtrator:inst
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
@@ -760,7 +777,7 @@ C_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 mode => inst7.IN1
 
 
-|projeto|somador_condicional:inst13|som_sub_4bits:inst|somador_e_subtrator:inst1
+|projeto|somador_condicional:inst64|som_sub_4bits:inst|somador_e_subtrator:inst1
 S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 a => inst5.IN0
 a => inst7.IN0
