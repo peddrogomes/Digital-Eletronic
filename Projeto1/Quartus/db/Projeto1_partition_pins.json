@@ -64,7 +64,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "Botao_de_reset",
+					"strict" : false
+				},
+				{
 					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "Botao_de_parada",
 					"strict" : false
 				}
 			]

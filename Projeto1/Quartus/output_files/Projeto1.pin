@@ -132,7 +132,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : 60        :        :                   :      
 VCCINT                       : 61        : power  :                   : 1.2V    :           :                
 VCCIO4                       : 62        : power  :                   : 2.5V    : 4         :                
 GND                          : 63        : gnd    :                   :         :           :                
-Botao_de_reset               : 64        : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 64        :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 65        :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 66        :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 67        :        :                   :         : 4         :                
@@ -156,10 +156,10 @@ LED4                         : 84        : output : 2.5 V             :         
 LED3                         : 85        : output : 2.5 V             :         : 5         : Y              
 LED2                         : 86        : output : 2.5 V             :         : 5         : Y              
 LED1                         : 87        : output : 2.5 V             :         : 5         : Y              
-GND+                         : 88        :        :                   :         : 5         :                
+Botao_de_parada              : 88        : input  : 2.5 V             :         : 5         : Y              
 SW_MODO                      : 89        : input  : 2.5 V             :         : 5         : Y              
 GND+                         : 90        :        :                   :         : 6         :                
-GND+                         : 91        :        :                   :         : 6         :                
+Botao_de_reset               : 91        : input  : 2.5 V             :         : 6         : Y              
 CONF_DONE                    : 92        :        :                   :         : 6         :                
 VCCIO6                       : 93        : power  :                   : 2.5V    : 6         :                
 MSEL0                        : 94        :        :                   :         : 6         :                
@@ -211,6 +211,6 @@ VCCIO8                       : 139       : power  :                   : 2.5V    
 GND                          : 140       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 141       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 142       :        :                   :         : 8         :                
-Botao_de_parada              : 143       : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 143       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 144       :        :                   :         : 8         :                
 GND                          : EPAD      :        :                   :         :           :                

@@ -8,9 +8,8 @@ SW_MODO => somador_condicional:inst65.Modo
 SW_MODO => somador_condicional:inst66.Modo
 SW_MODO => inst28.IN0
 SW_MODO => somador_condicional:inst64.Modo
-Botao_de_reset => somador_condicional:inst66.sw_reset
-Botao_de_reset => somador_condicional:inst65.sw_reset
-Botao_de_reset => somador_condicional:inst67.sw_reset
+Botao_de_reset => debounce2:inst21.IN
+Botao_de_parada => debounce3:inst3.IN
 7seg_b <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 7seg_c <= inst24.DB_MAX_OUTPUT_PORT_TYPE
 7seg_d <= inst20.DB_MAX_OUTPUT_PORT_TYPE
@@ -24,7 +23,6 @@ LED4 <= somador_condicional:inst64.Q03
 LED1 <= somador_condicional:inst64.Q00
 LED2 <= somador_condicional:inst64.Q01
 LED3 <= somador_condicional:inst64.Q02
-Botao_de_parada => ~NO_FANOUT~
 
 
 |projeto|mux_7seg:inst6
@@ -147,6 +145,10 @@ g_o <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 |projeto|somador_condicional:inst67
 Q00 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Q03 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+sw_reset => inst23.IN1
+sw_reset => inst21.IN0
+sw_reset => inst22.IN0
+sw_reset => inst20.IN1
 Clk_in => inst5.CLK
 Clk_in => inst4.CLK
 Clk_in => inst3.CLK
@@ -155,7 +157,6 @@ Q01 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Q02 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 Modo => som_sub_4bits:inst.Mode
 Carry <= inst140.DB_MAX_OUTPUT_PORT_TYPE
-sw_reset => ~NO_FANOUT~
 
 
 |projeto|somador_condicional:inst67|som_sub_4bits:inst
@@ -237,6 +238,10 @@ mode => inst7.IN1
 |projeto|somador_condicional:inst65
 Q00 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Q03 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+sw_reset => inst23.IN1
+sw_reset => inst21.IN0
+sw_reset => inst22.IN0
+sw_reset => inst20.IN1
 Clk_in => inst5.CLK
 Clk_in => inst4.CLK
 Clk_in => inst3.CLK
@@ -245,7 +250,6 @@ Q01 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Q02 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 Modo => som_sub_4bits:inst.Mode
 Carry <= inst140.DB_MAX_OUTPUT_PORT_TYPE
-sw_reset => ~NO_FANOUT~
 
 
 |projeto|somador_condicional:inst65|som_sub_4bits:inst
@@ -327,6 +331,10 @@ mode => inst7.IN1
 |projeto|somador_condicional:inst66
 Q00 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Q03 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+sw_reset => inst23.IN1
+sw_reset => inst21.IN0
+sw_reset => inst22.IN0
+sw_reset => inst20.IN1
 Clk_in => inst5.CLK
 Clk_in => inst4.CLK
 Clk_in => inst3.CLK
@@ -335,7 +343,6 @@ Q01 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Q02 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 Modo => som_sub_4bits:inst.Mode
 Carry <= inst140.DB_MAX_OUTPUT_PORT_TYPE
-sw_reset => ~NO_FANOUT~
 
 
 |projeto|somador_condicional:inst66|som_sub_4bits:inst
@@ -412,6 +419,12 @@ c_in => inst3.IN0
 c_in => inst1.IN1
 C_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 mode => inst7.IN1
+
+
+|projeto|debounce2:inst21
+Single_pulse <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst4.CLK
+IN => inst.DATAIN
 
 
 |projeto|divisor_de_clock:inst11
@@ -585,6 +598,13 @@ datab[23] => data_wire[15].IN1
 datab[24] => data_wire[16].IN1
 
 
+|projeto|debounce3:inst3
+OUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+clk => inst3.CLK
+IN => inst.DATAIN
+
+
 |projeto|decod_bsd_7seg:inst26
 a_o <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 A_IN => inst16.IN0
@@ -704,6 +724,10 @@ selector1 => inst.IN0
 |projeto|somador_condicional:inst64
 Q00 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Q03 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+sw_reset => inst23.IN1
+sw_reset => inst21.IN0
+sw_reset => inst22.IN0
+sw_reset => inst20.IN1
 Clk_in => inst5.CLK
 Clk_in => inst4.CLK
 Clk_in => inst3.CLK
@@ -712,7 +736,6 @@ Q01 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Q02 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 Modo => som_sub_4bits:inst.Mode
 Carry <= inst140.DB_MAX_OUTPUT_PORT_TYPE
-sw_reset => ~NO_FANOUT~
 
 
 |projeto|somador_condicional:inst64|som_sub_4bits:inst

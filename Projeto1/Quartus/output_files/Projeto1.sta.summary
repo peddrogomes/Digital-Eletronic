@@ -2,47 +2,63 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -5.912
-TNS   : -153.403
+Type  : Slow 1200mV 85C Model Setup 'divisor_de_clock:inst11|inst1'
+Slack : -6.314
+TNS   : -38.111
 
-Type  : Slow 1200mV 85C Model Setup 'somador_condicional:inst67|inst2'
-Slack : -4.046
-TNS   : -20.827
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -5.552
+TNS   : -145.249
 
 Type  : Slow 1200mV 85C Model Setup 'somador_condicional:inst66|inst2'
-Slack : -3.674
-TNS   : -15.401
+Slack : -4.882
+TNS   : -27.146
+
+Type  : Slow 1200mV 85C Model Setup 'somador_condicional:inst67|inst2'
+Slack : -4.116
+TNS   : -24.484
 
 Type  : Slow 1200mV 85C Model Setup 'divisor_de_clock:inst11|lpm_counter:inst|cntr_g2i:auto_generated|counter_reg_bit[0]'
-Slack : -1.543
-TNS   : -1.543
+Slack : -3.793
+TNS   : -3.793
 
 Type  : Slow 1200mV 85C Model Setup 'Divisor_de_clock2:inst|lpm_counter:inst|cntr_idg:auto_generated|counter_reg_bit[0]'
-Slack : -1.137
-TNS   : -1.137
+Slack : -1.242
+TNS   : -1.242
 
 Type  : Slow 1200mV 85C Model Setup 'Divisor_de_clock2:inst|inst2'
-Slack : -0.667
-TNS   : -0.667
+Slack : -0.687
+TNS   : -0.687
+
+Type  : Slow 1200mV 85C Model Setup 'debounce2:inst21|inst4'
+Slack : -0.235
+TNS   : -0.235
+
+Type  : Slow 1200mV 85C Model Setup 'debounce3:inst3|inst'
+Slack : 0.114
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'seletor_display:inst5|inst2'
 Slack : 0.114
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : -2.005
-TNS   : -32.859
+Type  : Slow 1200mV 85C Model Hold 'somador_condicional:inst67|inst2'
+Slack : -1.965
+TNS   : -13.667
 
 Type  : Slow 1200mV 85C Model Hold 'somador_condicional:inst66|inst2'
-Slack : -0.129
-TNS   : -0.795
+Slack : -1.331
+TNS   : -9.229
 
-Type  : Slow 1200mV 85C Model Hold 'somador_condicional:inst67|inst2'
-Slack : 0.359
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : -0.960
+TNS   : -10.693
+
+Type  : Slow 1200mV 85C Model Hold 'divisor_de_clock:inst11|inst1'
+Slack : 0.453
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'divisor_de_clock:inst11|lpm_counter:inst|cntr_g2i:auto_generated|counter_reg_bit[0]'
+Type  : Slow 1200mV 85C Model Hold 'debounce3:inst3|inst'
 Slack : 0.497
 TNS   : 0.000
 
@@ -51,44 +67,68 @@ Slack : 0.497
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'Divisor_de_clock2:inst|inst2'
-Slack : 0.571
+Slack : 0.650
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'Divisor_de_clock2:inst|lpm_counter:inst|cntr_idg:auto_generated|counter_reg_bit[0]'
-Slack : 0.735
+Slack : 0.717
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'somador_condicional:inst67|inst2'
-Slack : -10.161
-TNS   : -41.207
+Type  : Slow 1200mV 85C Model Hold 'debounce2:inst21|inst4'
+Slack : 0.757
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divisor_de_clock:inst11|lpm_counter:inst|cntr_g2i:auto_generated|counter_reg_bit[0]'
+Slack : 0.996
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'divisor_de_clock:inst11|inst1'
+Slack : -9.894
+TNS   : -55.366
 
 Type  : Slow 1200mV 85C Model Recovery 'somador_condicional:inst66|inst2'
-Slack : -9.868
-TNS   : -38.358
+Slack : -8.462
+TNS   : -54.720
+
+Type  : Slow 1200mV 85C Model Recovery 'somador_condicional:inst67|inst2'
+Slack : -7.696
+TNS   : -45.222
 
 Type  : Slow 1200mV 85C Model Removal 'somador_condicional:inst67|inst2'
-Slack : 0.623
+Slack : 0.093
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'somador_condicional:inst66|inst2'
-Slack : 0.856
+Slack : 0.707
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divisor_de_clock:inst11|inst1'
+Slack : 2.128
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
 TNS   : -55.045
 
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divisor_de_clock:inst11|lpm_counter:inst|cntr_g2i:auto_generated|counter_reg_bit[0]'
+Slack : -2.293
+TNS   : -13.048
+
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'somador_condicional:inst66|inst2'
 Slack : -1.487
 TNS   : -17.844
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divisor_de_clock:inst11|inst1'
+Slack : -1.487
+TNS   : -16.572
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'somador_condicional:inst67|inst2'
 Slack : -1.487
 TNS   : -16.357
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divisor_de_clock:inst11|lpm_counter:inst|cntr_g2i:auto_generated|counter_reg_bit[0]'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce2:inst21|inst4'
 Slack : -1.487
-TNS   : -8.143
+TNS   : -2.974
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Divisor_de_clock2:inst|inst2'
 Slack : -1.487
@@ -98,51 +138,71 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Divisor_de_clock2:inst|lpm_co
 Slack : -1.487
 TNS   : -1.487
 
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce3:inst3|inst'
+Slack : -1.487
+TNS   : -1.487
+
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'seletor_display:inst5|inst2'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -5.381
-TNS   : -137.851
+Type  : Slow 1200mV 0C Model Setup 'divisor_de_clock:inst11|inst1'
+Slack : -5.797
+TNS   : -34.974
 
-Type  : Slow 1200mV 0C Model Setup 'somador_condicional:inst67|inst2'
-Slack : -3.697
-TNS   : -18.713
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -5.064
+TNS   : -130.504
 
 Type  : Slow 1200mV 0C Model Setup 'somador_condicional:inst66|inst2'
-Slack : -3.360
-TNS   : -13.748
+Slack : -4.502
+TNS   : -24.960
+
+Type  : Slow 1200mV 0C Model Setup 'somador_condicional:inst67|inst2'
+Slack : -3.906
+TNS   : -22.797
 
 Type  : Slow 1200mV 0C Model Setup 'divisor_de_clock:inst11|lpm_counter:inst|cntr_g2i:auto_generated|counter_reg_bit[0]'
-Slack : -1.160
-TNS   : -1.160
+Slack : -3.415
+TNS   : -3.415
 
 Type  : Slow 1200mV 0C Model Setup 'Divisor_de_clock2:inst|lpm_counter:inst|cntr_idg:auto_generated|counter_reg_bit[0]'
-Slack : -1.046
-TNS   : -1.046
+Slack : -1.152
+TNS   : -1.152
 
 Type  : Slow 1200mV 0C Model Setup 'Divisor_de_clock2:inst|inst2'
-Slack : -0.547
-TNS   : -0.547
+Slack : -0.534
+TNS   : -0.534
+
+Type  : Slow 1200mV 0C Model Setup 'debounce2:inst21|inst4'
+Slack : -0.128
+TNS   : -0.128
+
+Type  : Slow 1200mV 0C Model Setup 'debounce3:inst3|inst'
+Slack : 0.208
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'seletor_display:inst5|inst2'
 Slack : 0.208
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : -1.837
-TNS   : -31.316
+Type  : Slow 1200mV 0C Model Hold 'somador_condicional:inst67|inst2'
+Slack : -1.769
+TNS   : -12.297
 
 Type  : Slow 1200mV 0C Model Hold 'somador_condicional:inst66|inst2'
-Slack : -0.129
-TNS   : -0.799
+Slack : -1.220
+TNS   : -8.454
 
-Type  : Slow 1200mV 0C Model Hold 'somador_condicional:inst67|inst2'
-Slack : 0.307
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : -0.915
+TNS   : -10.372
+
+Type  : Slow 1200mV 0C Model Hold 'divisor_de_clock:inst11|inst1'
+Slack : 0.401
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'divisor_de_clock:inst11|lpm_counter:inst|cntr_g2i:auto_generated|counter_reg_bit[0]'
+Type  : Slow 1200mV 0C Model Hold 'debounce3:inst3|inst'
 Slack : 0.445
 TNS   : 0.000
 
@@ -151,44 +211,68 @@ Slack : 0.445
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Divisor_de_clock2:inst|inst2'
-Slack : 0.499
+Slack : 0.517
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'debounce2:inst21|inst4'
+Slack : 0.699
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Divisor_de_clock2:inst|lpm_counter:inst|cntr_idg:auto_generated|counter_reg_bit[0]'
-Slack : 0.718
+Slack : 0.701
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'somador_condicional:inst67|inst2'
-Slack : -9.492
-TNS   : -37.750
+Type  : Slow 1200mV 0C Model Hold 'divisor_de_clock:inst11|lpm_counter:inst|cntr_g2i:auto_generated|counter_reg_bit[0]'
+Slack : 0.983
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'divisor_de_clock:inst11|inst1'
+Slack : -9.250
+TNS   : -51.317
 
 Type  : Slow 1200mV 0C Model Recovery 'somador_condicional:inst66|inst2'
-Slack : -9.230
-TNS   : -34.745
+Slack : -7.955
+TNS   : -50.555
+
+Type  : Slow 1200mV 0C Model Recovery 'somador_condicional:inst67|inst2'
+Slack : -7.284
+TNS   : -42.253
 
 Type  : Slow 1200mV 0C Model Removal 'somador_condicional:inst67|inst2'
-Slack : 0.520
+Slack : 0.054
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'somador_condicional:inst66|inst2'
-Slack : 0.813
+Slack : 0.583
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divisor_de_clock:inst11|inst1'
+Slack : 1.859
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
 TNS   : -55.045
 
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divisor_de_clock:inst11|lpm_counter:inst|cntr_g2i:auto_generated|counter_reg_bit[0]'
+Slack : -2.222
+TNS   : -11.254
+
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'somador_condicional:inst66|inst2'
 Slack : -1.487
-TNS   : -17.844
+TNS   : -18.187
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divisor_de_clock:inst11|inst1'
+Slack : -1.487
+TNS   : -17.609
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'somador_condicional:inst67|inst2'
 Slack : -1.487
 TNS   : -16.357
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divisor_de_clock:inst11|lpm_counter:inst|cntr_g2i:auto_generated|counter_reg_bit[0]'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce2:inst21|inst4'
 Slack : -1.487
-TNS   : -6.645
+TNS   : -2.974
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Divisor_de_clock2:inst|inst2'
 Slack : -1.487
@@ -198,51 +282,71 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Divisor_de_clock2:inst|lpm_cou
 Slack : -1.487
 TNS   : -1.487
 
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce3:inst3|inst'
+Slack : -1.487
+TNS   : -1.487
+
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'seletor_display:inst5|inst2'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -2.082
-TNS   : -50.178
+Type  : Fast 1200mV 0C Model Setup 'divisor_de_clock:inst11|inst1'
+Slack : -2.332
+TNS   : -13.744
 
-Type  : Fast 1200mV 0C Model Setup 'somador_condicional:inst67|inst2'
-Slack : -1.498
-TNS   : -5.828
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -1.965
+TNS   : -46.556
 
 Type  : Fast 1200mV 0C Model Setup 'somador_condicional:inst66|inst2'
-Slack : -1.306
-TNS   : -4.276
-
-Type  : Fast 1200mV 0C Model Setup 'Divisor_de_clock2:inst|lpm_counter:inst|cntr_idg:auto_generated|counter_reg_bit[0]'
-Slack : -0.307
-TNS   : -0.307
+Slack : -1.696
+TNS   : -8.634
 
 Type  : Fast 1200mV 0C Model Setup 'divisor_de_clock:inst11|lpm_counter:inst|cntr_g2i:auto_generated|counter_reg_bit[0]'
-Slack : -0.161
-TNS   : -0.161
+Slack : -1.627
+TNS   : -1.627
+
+Type  : Fast 1200mV 0C Model Setup 'somador_condicional:inst67|inst2'
+Slack : -1.362
+TNS   : -7.220
+
+Type  : Fast 1200mV 0C Model Setup 'Divisor_de_clock2:inst|lpm_counter:inst|cntr_idg:auto_generated|counter_reg_bit[0]'
+Slack : -0.300
+TNS   : -0.300
 
 Type  : Fast 1200mV 0C Model Setup 'Divisor_de_clock2:inst|inst2'
-Slack : -0.032
-TNS   : -0.032
+Slack : -0.067
+TNS   : -0.067
+
+Type  : Fast 1200mV 0C Model Setup 'debounce2:inst21|inst4'
+Slack : 0.481
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'debounce3:inst3|inst'
+Slack : 0.626
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'seletor_display:inst5|inst2'
 Slack : 0.626
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : -0.973
-TNS   : -16.122
+Type  : Fast 1200mV 0C Model Hold 'somador_condicional:inst67|inst2'
+Slack : -0.911
+TNS   : -6.337
 
 Type  : Fast 1200mV 0C Model Hold 'somador_condicional:inst66|inst2'
-Slack : -0.106
-TNS   : -0.693
+Slack : -0.606
+TNS   : -4.202
 
-Type  : Fast 1200mV 0C Model Hold 'somador_condicional:inst67|inst2'
-Slack : 0.170
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : -0.452
+TNS   : -5.985
+
+Type  : Fast 1200mV 0C Model Hold 'divisor_de_clock:inst11|inst1'
+Slack : 0.187
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'divisor_de_clock:inst11|lpm_counter:inst|cntr_g2i:auto_generated|counter_reg_bit[0]'
+Type  : Fast 1200mV 0C Model Hold 'debounce3:inst3|inst'
 Slack : 0.208
 TNS   : 0.000
 
@@ -250,37 +354,57 @@ Type  : Fast 1200mV 0C Model Hold 'seletor_display:inst5|inst2'
 Slack : 0.208
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Hold 'debounce2:inst21|inst4'
+Slack : 0.296
+TNS   : 0.000
+
 Type  : Fast 1200mV 0C Model Hold 'Divisor_de_clock2:inst|inst2'
-Slack : 0.280
+Slack : 0.356
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'Divisor_de_clock2:inst|lpm_counter:inst|cntr_idg:auto_generated|counter_reg_bit[0]'
-Slack : 0.464
+Slack : 0.378
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'somador_condicional:inst67|inst2'
-Slack : -4.554
-TNS   : -13.816
+Type  : Fast 1200mV 0C Model Hold 'divisor_de_clock:inst11|lpm_counter:inst|cntr_g2i:auto_generated|counter_reg_bit[0]'
+Slack : 0.699
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'divisor_de_clock:inst11|inst1'
+Slack : -3.964
+TNS   : -20.482
 
 Type  : Fast 1200mV 0C Model Recovery 'somador_condicional:inst66|inst2'
-Slack : -4.396
-TNS   : -11.923
+Slack : -3.328
+TNS   : -18.222
+
+Type  : Fast 1200mV 0C Model Recovery 'somador_condicional:inst67|inst2'
+Slack : -2.969
+TNS   : -14.136
 
 Type  : Fast 1200mV 0C Model Removal 'somador_condicional:inst67|inst2'
-Slack : 0.304
+Slack : 0.142
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'somador_condicional:inst66|inst2'
-Slack : 0.412
+Slack : 0.427
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divisor_de_clock:inst11|inst1'
+Slack : 1.058
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -38.717
+TNS   : -39.428
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'somador_condicional:inst66|inst2'
 Slack : -1.000
 TNS   : -12.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisor_de_clock:inst11|inst1'
+Slack : -1.000
+TNS   : -11.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'somador_condicional:inst67|inst2'
 Slack : -1.000
@@ -288,13 +412,21 @@ TNS   : -11.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisor_de_clock:inst11|lpm_counter:inst|cntr_g2i:auto_generated|counter_reg_bit[0]'
 Slack : -1.000
-TNS   : -2.653
+TNS   : -4.786
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce2:inst21|inst4'
+Slack : -1.000
+TNS   : -2.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Divisor_de_clock2:inst|inst2'
 Slack : -1.000
 TNS   : -1.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Divisor_de_clock2:inst|lpm_counter:inst|cntr_idg:auto_generated|counter_reg_bit[0]'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce3:inst3|inst'
 Slack : -1.000
 TNS   : -1.000
 

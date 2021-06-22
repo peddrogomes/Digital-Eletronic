@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto1
-Mon Jun 21 18:06:01 2021
+Mon Jun 21 22:06:58 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -45,15 +45,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun 21 18:06:01 2021       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jun 21 22:06:58 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto1                                    ;
 ; Top-level Entity Name              ; projeto                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 129                                         ;
-;     Total combinational functions  ; 129                                         ;
-;     Dedicated logic registers      ; 55                                          ;
-; Total registers                    ; 55                                          ;
+; Total logic elements               ; 143                                         ;
+;     Total combinational functions  ; 139                                         ;
+;     Dedicated logic registers      ; 61                                          ;
+; Total registers                    ; 61                                          ;
 ; Total pins                         ; 18                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -179,6 +179,8 @@ https://fpgasoftware.intel.com/eula.
 ; decod_bsd_7seg.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/decod_bsd_7seg.bdf      ;         ;
 ; som_sub_4bits.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/som_sub_4bits.bdf       ;         ;
 ; somador_condicional.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/somador_condicional.bdf ;         ;
+; debounce2.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/debounce2.bdf           ;         ;
+; debounce3.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/debounce3.bdf           ;         ;
 ; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf             ;         ;
 ; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_constant.inc            ;         ;
 ; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc              ;         ;
@@ -200,20 +202,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 129       ;
+; Estimated Total logic elements              ; 143       ;
 ;                                             ;           ;
-; Total combinational functions               ; 129       ;
+; Total combinational functions               ; 139       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 63        ;
-;     -- 3 input functions                    ; 10        ;
-;     -- <=2 input functions                  ; 56        ;
+;     -- 4 input functions                    ; 65        ;
+;     -- 3 input functions                    ; 11        ;
+;     -- <=2 input functions                  ; 63        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 94        ;
+;     -- normal mode                          ; 104       ;
 ;     -- arithmetic mode                      ; 35        ;
 ;                                             ;           ;
-; Total registers                             ; 55        ;
-;     -- Dedicated logic registers            ; 55        ;
+; Total registers                             ; 61        ;
+;     -- Dedicated logic registers            ; 61        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 18        ;
@@ -222,8 +224,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 35        ;
-; Total fan-out                               ; 588       ;
-; Average fan-out                             ; 2.67      ;
+; Total fan-out                               ; 623       ;
+; Average fan-out                             ; 2.64      ;
 +---------------------------------------------+-----------+
 
 
@@ -232,10 +234,12 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                      ; Entity Name         ; Library Name ;
 +--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+---------------------+--------------+
-; |projeto                             ; 129 (7)             ; 55 (0)                    ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |projeto                                                                                 ; projeto             ; work         ;
+; |projeto                             ; 139 (7)             ; 61 (0)                    ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |projeto                                                                                 ; projeto             ; work         ;
 ;    |Divisor_de_clock2:inst|          ; 12 (1)              ; 11 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|Divisor_de_clock2:inst                                                          ; Divisor_de_clock2   ; work         ;
 ;       |lpm_counter:inst|             ; 11 (0)              ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|Divisor_de_clock2:inst|lpm_counter:inst                                         ; lpm_counter         ; work         ;
 ;          |cntr_idg:auto_generated|   ; 11 (11)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|Divisor_de_clock2:inst|lpm_counter:inst|cntr_idg:auto_generated                 ; cntr_idg            ; work         ;
+;    |debounce2:inst21|                ; 2 (2)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|debounce2:inst21                                                                ; debounce2           ; work         ;
+;    |debounce3:inst3|                 ; 2 (2)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|debounce3:inst3                                                                 ; debounce3           ; work         ;
 ;    |divisor_de_clock:inst11|         ; 36 (1)              ; 26 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11                                                         ; divisor_de_clock    ; work         ;
 ;       |lpm_counter:inst|             ; 35 (0)              ; 25 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11|lpm_counter:inst                                        ; lpm_counter         ; work         ;
 ;          |cntr_g2i:auto_generated|   ; 35 (27)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|divisor_de_clock:inst11|lpm_counter:inst|cntr_g2i:auto_generated                ; cntr_g2i            ; work         ;
@@ -251,13 +255,13 @@ https://fpgasoftware.intel.com/eula.
 ;    |somador_condicional:inst64|      ; 7 (6)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst64                                                      ; somador_condicional ; work         ;
 ;       |som_sub_4bits:inst|           ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst64|som_sub_4bits:inst                                   ; som_sub_4bits       ; work         ;
 ;          |somador_e_subtrator:inst2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst64|som_sub_4bits:inst|somador_e_subtrator:inst2         ; somador_e_subtrator ; work         ;
-;    |somador_condicional:inst65|      ; 7 (6)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst65                                                      ; somador_condicional ; work         ;
+;    |somador_condicional:inst65|      ; 9 (8)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst65                                                      ; somador_condicional ; work         ;
 ;       |som_sub_4bits:inst|           ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst65|som_sub_4bits:inst                                   ; som_sub_4bits       ; work         ;
 ;          |somador_e_subtrator:inst2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst65|som_sub_4bits:inst|somador_e_subtrator:inst2         ; somador_e_subtrator ; work         ;
-;    |somador_condicional:inst66|      ; 7 (6)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst66                                                      ; somador_condicional ; work         ;
+;    |somador_condicional:inst66|      ; 9 (8)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst66                                                      ; somador_condicional ; work         ;
 ;       |som_sub_4bits:inst|           ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst66|som_sub_4bits:inst                                   ; som_sub_4bits       ; work         ;
 ;          |somador_e_subtrator:inst2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst66|som_sub_4bits:inst|somador_e_subtrator:inst2         ; somador_e_subtrator ; work         ;
-;    |somador_condicional:inst67|      ; 7 (6)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst67                                                      ; somador_condicional ; work         ;
+;    |somador_condicional:inst67|      ; 9 (8)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst67                                                      ; somador_condicional ; work         ;
 ;       |som_sub_4bits:inst|           ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst67|som_sub_4bits:inst                                   ; som_sub_4bits       ; work         ;
 ;          |somador_e_subtrator:inst2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|somador_condicional:inst67|som_sub_4bits:inst|somador_e_subtrator:inst2         ; somador_e_subtrator ; work         ;
 +--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+---------------------+--------------+
@@ -269,7 +273,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 55    ;
+; Total registers                              ; 61    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 25    ;
 ; Number of registers using Asynchronous Clear ; 16    ;
@@ -339,22 +343,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 18                          ;
-; cycloneiii_ff         ; 55                          ;
+; cycloneiii_ff         ; 61                          ;
 ;     CLR               ; 16                          ;
 ;     SLD               ; 25                          ;
-;     plain             ; 14                          ;
-; cycloneiii_lcell_comb ; 139                         ;
+;     plain             ; 20                          ;
+; cycloneiii_lcell_comb ; 149                         ;
 ;     arith             ; 35                          ;
 ;         2 data inputs ; 35                          ;
-;     normal            ; 104                         ;
+;     normal            ; 114                         ;
 ;         0 data inputs ; 3                           ;
-;         1 data inputs ; 18                          ;
-;         2 data inputs ; 10                          ;
-;         3 data inputs ; 10                          ;
-;         4 data inputs ; 63                          ;
+;         1 data inputs ; 20                          ;
+;         2 data inputs ; 15                          ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 65                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.98                        ;
+; Average LUT depth     ; 2.89                        ;
 +-----------------------+-----------------------------+
 
 
@@ -373,7 +377,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Jun 21 18:05:10 2021
+    Info: Processing started: Mon Jun 21 22:06:17 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto1 -c Projeto1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -407,6 +411,12 @@ Info (12021): Found 1 design units, including 1 entities, in source file som_sub
     Info (12023): Found entity 1: som_sub_4bits
 Info (12021): Found 1 design units, including 1 entities, in source file somador_condicional.bdf
     Info (12023): Found entity 1: somador_condicional
+Info (12021): Found 1 design units, including 1 entities, in source file debounce.bdf
+    Info (12023): Found entity 1: debounce
+Info (12021): Found 1 design units, including 1 entities, in source file debounce2.bdf
+    Info (12023): Found entity 1: debounce2
+Info (12021): Found 1 design units, including 1 entities, in source file debounce3.bdf
+    Info (12023): Found entity 1: debounce3
 Info (12127): Elaborating entity "projeto" for the top level hierarchy
 Warning (275011): Block or symbol "NOT" of instance "inst1" overlaps another block or symbol
 Warning (275011): Block or symbol "NOT" of instance "inst4" overlaps another block or symbol
@@ -416,7 +426,6 @@ Warning (275011): Block or symbol "NOT" of instance "inst40" overlaps another bl
 Warning (275011): Block or symbol "NOT" of instance "inst53" overlaps another block or symbol
 Warning (275011): Block or symbol "NOT" of instance "inst56" overlaps another block or symbol
 Warning (275011): Block or symbol "NOT" of instance "inst58" overlaps another block or symbol
-Warning (275009): Pin "Botao_de_parada" not connected
 Info (12128): Elaborating entity "mux_7seg" for hierarchy "mux_7seg:inst6"
 Info (12128): Elaborating entity "seletor_display" for hierarchy "seletor_display:inst5"
 Info (12128): Elaborating entity "Divisor_de_clock2" for hierarchy "Divisor_de_clock2:inst"
@@ -435,9 +444,10 @@ Warning (275008): Primitive "AND2" of instance "inst2" not used
 Warning (275008): Primitive "AND2" of instance "inst23" not used
 Warning (275008): Primitive "AND2" of instance "inst3" not used
 Info (12128): Elaborating entity "somador_condicional" for hierarchy "somador_condicional:inst67"
-Warning (275009): Pin "sw_reset" not connected
 Info (12128): Elaborating entity "som_sub_4bits" for hierarchy "somador_condicional:inst67|som_sub_4bits:inst"
 Info (12128): Elaborating entity "somador_e_subtrator" for hierarchy "somador_condicional:inst67|som_sub_4bits:inst|somador_e_subtrator:inst3"
+Info (12128): Elaborating entity "debounce2" for hierarchy "debounce2:inst21"
+Warning (275011): Block or symbol "TFF" of instance "inst4" overlaps another block or symbol
 Info (12128): Elaborating entity "divisor_de_clock" for hierarchy "divisor_de_clock:inst11"
 Info (12128): Elaborating entity "LPM_COUNTER" for hierarchy "divisor_de_clock:inst11|LPM_COUNTER:inst"
 Info (12130): Elaborated megafunction instantiation "divisor_de_clock:inst11|LPM_COUNTER:inst"
@@ -450,22 +460,20 @@ Info (12128): Elaborating entity "cntr_g2i" for hierarchy "divisor_de_clock:inst
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_dic.tdf
     Info (12023): Found entity 1: cmpr_dic File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cmpr_dic.tdf Line: 23
 Info (12128): Elaborating entity "cmpr_dic" for hierarchy "divisor_de_clock:inst11|LPM_COUNTER:inst|cntr_g2i:auto_generated|cmpr_dic:cmpr1" File: C:/Pasta Pessoal/Periodo 20.2/Eln Digital/Projeto1/Quartus/db/cntr_g2i.tdf Line: 160
+Info (12128): Elaborating entity "debounce3" for hierarchy "debounce3:inst3"
 Warning (19016): Clock multiplexers are found and protected
     Warning (19017): Found clock multiplexer inst63~0
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Botao_de_reset"
-    Warning (15610): No output dependent on input pin "Botao_de_parada"
-Info (21057): Implemented 147 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 161 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 129 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
-    Info: Peak virtual memory: 4756 megabytes
-    Info: Processing ended: Mon Jun 21 18:06:01 2021
-    Info: Elapsed time: 00:00:51
-    Info: Total CPU time (on all processors): 00:01:16
+    Info (21061): Implemented 143 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4757 megabytes
+    Info: Processing ended: Mon Jun 21 22:06:58 2021
+    Info: Elapsed time: 00:00:41
+    Info: Total CPU time (on all processors): 00:01:13
 
 
