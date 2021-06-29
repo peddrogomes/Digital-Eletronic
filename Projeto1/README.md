@@ -10,7 +10,7 @@
 
 7seg: [link](https://www.profelectro.info/mapa-de-karnaugh-onlie-para-simplificacao-de-funcoes-booleanas-a-partir-da-tabela-da-verdade/)
 
-* a: ![image-20210616233159106](C:\Pasta Pessoal\Periodo 20.2\Eln Digital\Projeto1\image-20210616233159106.png)
+* a: ![image-20210616233159106](Digital-Eletronic\Projeto1\image-20210616233159106.png)
 
 * b: ![image-20210616233334205](C:\Pasta Pessoal\Periodo 20.2\Eln Digital\Projeto1\image-20210616233334205.png)
 
