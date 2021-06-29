@@ -1,0 +1,1966 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cycloneive
+Quartus root          :  c:/intelfpga_lite/20.1/quartus/bin64/
+Quartus sim root      :  c:/intelfpga_lite/20.1/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  verilog
+Simulation Mode       :  GUI
+Sim Output File       :  Projeto1.vo
+Sim SDF file          :  Projeto1__verilog.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script c:/intelfpga_lite/20.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File Projeto1_run_msim_gate_verilog.do already exists - backing up current file as Projeto1_run_msim_gate_verilog.do.bak
+Probing transcript
+ModelSim-Altera Info: # Reading pref.tcl
+ModelSim-Altera Info: # do Projeto1_run_msim_gate_verilog.do
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+ModelSim-Altera Info: # vmap work gate_work 
+ModelSim-Altera Info: # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+. {Projeto1.vo}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 19:37:35 on Jun 25,2021
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." Projeto1.vo 
+ModelSim-Altera Info: # -- Compiling module projeto
+ModelSim-Altera Info: # -- Compiling module hard_block
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	projeto
+ModelSim-Altera Info: # End time: 19:37:37 on Jun 25,2021, Elapsed time: 0:00:02
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: vsim work.projeto
+ModelSim-Altera Info: # vsim work.projeto 
+ModelSim-Altera Info: # Start time: 19:38:07 on Jun 25,2021
+ModelSim-Altera Info: # Loading work.projeto
+ModelSim-Altera Info: # Loading work.hard_block
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 345
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 358
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 371
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 384
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 397
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 410
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 423
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 436
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 449
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 462
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 475
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 488
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 501
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 514
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 527
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 537
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_clkctrl' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 547
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 560
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 578
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 595
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 612
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 631
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 650
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 669
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 688
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 707
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 726
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 745
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 764
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 783
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 800
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 818
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 837
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 856
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 875
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 894
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 913
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 932
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 951
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 970
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 989
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1008
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1027
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1046
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1065
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1084
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1103
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1122
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1141
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1160
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1179
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1198
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1217
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1236
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1255
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1274
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1293
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1312
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1331
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1350
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1369
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1388
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1407
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1426
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1445
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1464
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1483
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1502
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1521
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1540
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1559
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1578
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1596
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1614
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1632
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1650
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1668
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1686
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1703
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1721
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1738
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1755
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1774
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1791
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_clkctrl' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1808
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1821
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1838
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1855
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_clkctrl' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1874
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1887
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1897
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1916
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1933
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1952
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1969
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1986
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2003
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2020
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2039
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2056
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2073
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2092
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2109
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2126
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2143
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2162
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2179
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2196
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2213
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2230
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2249
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2266
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2283
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2302
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2319
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2336
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2355
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2372
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2389
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2408
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2418
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2435
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2454
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2473
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2490
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2507
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_clkctrl' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2526
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2539
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2556
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2573
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2590
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2609
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2626
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2643
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2662
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2679
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2696
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2715
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2732
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2749
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2766
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2783
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2800
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2817
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2834
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2851
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2868
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2887
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2904
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2921
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2940
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2957
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2974
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2991
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3009
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3026
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3045
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3064
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3083
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3102
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3121
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3140
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3159
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3178
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3197
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3216
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3235
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3254
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3273
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3292
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3311
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3330
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3349
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3368
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3387
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3404
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3421
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3438
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3457
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3474
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3491
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3510
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3527
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3546
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3563
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3580
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3597
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3614
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3631
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3648
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3665
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3682
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3699
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3716
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3733
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3750
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3767
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3784
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3801
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3818
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3835
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3852
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3869
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3886
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3903
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3920
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3937
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3954
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3971
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3988
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4005
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4022
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4039
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4056
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4073
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4090
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4107
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4124
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4141
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4158
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4175
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4192
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4209
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4226
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4243
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4262
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4279
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4296
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4315
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4332
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4351
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4368
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4385
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Info: # Error loading design
+ModelSim-Altera Info: vsim work.projeto
+ModelSim-Altera Info: # End time: 19:38:09 on Jun 25,2021, Elapsed time: 0:00:02
+ModelSim-Altera Info: # Errors: 233, Warnings: 0
+ModelSim-Altera Info: # vsim work.projeto 
+ModelSim-Altera Info: # Start time: 19:38:09 on Jun 25,2021
+ModelSim-Altera Info: # Loading work.projeto
+ModelSim-Altera Info: # Loading work.hard_block
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 345
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 358
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 371
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 384
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 397
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 410
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 423
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 436
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 449
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 462
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 475
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 488
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 501
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 514
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 527
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 537
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_clkctrl' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 547
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 560
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 578
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 595
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 612
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 631
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 650
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 669
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 688
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 707
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 726
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 745
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 764
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 783
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 800
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 818
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 837
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 856
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 875
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 894
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 913
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 932
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 951
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 970
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 989
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1008
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1027
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1046
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1065
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1084
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1103
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1122
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1141
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1160
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1179
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1198
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1217
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1236
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1255
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1274
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1293
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1312
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1331
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1350
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1369
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1388
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1407
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1426
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1445
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1464
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1483
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1502
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1521
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1540
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1559
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1578
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1596
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1614
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1632
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1650
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1668
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1686
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1703
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1721
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1738
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1755
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1774
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1791
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_clkctrl' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1808
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1821
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1838
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1855
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_clkctrl' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1874
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1887
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1897
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1916
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1933
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1952
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1969
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 1986
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2003
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2020
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2039
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2056
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2073
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2092
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2109
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2126
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2143
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2162
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2179
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2196
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2213
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2230
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2249
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2266
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2283
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2302
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2319
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2336
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2355
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2372
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2389
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2408
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2418
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2435
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2454
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2473
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2490
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2507
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_clkctrl' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2526
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2539
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2556
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2573
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2590
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2609
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2626
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2643
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2662
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2679
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2696
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2715
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2732
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2749
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2766
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2783
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2800
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2817
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2834
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2851
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2868
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2887
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2904
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2921
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2940
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2957
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2974
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 2991
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3009
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3026
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3045
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3064
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3083
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3102
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3121
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3140
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3159
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3178
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3197
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3216
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3235
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3254
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3273
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3292
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3311
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3330
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3349
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3368
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3387
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3404
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3421
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3438
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3457
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3474
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3491
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3510
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3527
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3546
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3563
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3580
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3597
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3614
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3631
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3648
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3665
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3682
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3699
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3716
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3733
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3750
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3767
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3784
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3801
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3818
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3835
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3852
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3869
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3886
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3903
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3920
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3937
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3954
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3971
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 3988
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4005
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4022
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4039
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4056
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4073
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4090
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4107
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4124
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4141
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4158
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4175
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4192
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4209
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4226
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4243
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4262
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4279
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4296
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4315
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4332
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4351
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4368
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /projeto File: Projeto1.vo Line: 4385
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             C:/intelFPGA_lite/Projetos/Digital-Eletronic-main/Projeto1/Quartus/simulation/modelsim/gate_work
+ModelSim-Altera Info: # Error loading design
+ModelSim-Altera Info: # End time: 19:38:10 on Jun 25,2021, Elapsed time: 0:00:01
+ModelSim-Altera Info: # Errors: 233, Warnings: 0
+ModelSim-Altera Info: vsim work.hard_block
+ModelSim-Altera Info: # vsim work.hard_block 
+ModelSim-Altera Info: # Start time: 19:38:20 on Jun 25,2021
+ModelSim-Altera Info: # Loading work.hard_block
+ModelSim-Altera Info: # End time: 19:39:25 on Jun 25,2021, Elapsed time: 0:01:05
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+Error: Errors encountered while running modelsim do file
+Error: NativeLink simulation flow was NOT successful
+
+
+
+================The following additional information is provided to help identify the cause of error while running nativelink scripts=================
+Nativelink TCL script failed with errorCode:  1
+Nativelink TCL script failed with errorInfo:  1
+    (procedure "launch_sim" line 1)
+    invoked from within
+"launch_sim launch_args_hash"
+    ("eval" body line 1)
+    invoked from within
+"eval launch_sim launch_args_hash"
+    invoked from within
+"if [ info exists ::errorCode ] {
+                set savedCode $::errorCode
+                set savedInfo $::errorInfo
+                error $result $..."
+    invoked from within
+"if [catch {eval launch_sim launch_args_hash} result ] {
+            set status 1
+            if [ info exists ::errorCode ] {
+                set save..."
+    (procedure "run_sim" line 74)
+    invoked from within
+"run_sim run_sim_args_hash"
+    invoked from within
+"if [ info exists ::errorCode ] {
+            set savedCode $::errorCode
+            set savedInfo $::errorInfo
+            error "$result" $savedInfo ..."
+    (procedure "run_eda_simulation_tool" line 334)
+    invoked from within
+"run_eda_simulation_tool eda_opts_hash"
