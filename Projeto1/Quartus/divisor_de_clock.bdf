@@ -22,7 +22,7 @@ https://fpgasoftware.intel.com/eula.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -48 376 120 392)
+	(rect 56 376 224 392)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLKIN" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
@@ -278,6 +278,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 464 352)
 )
 (connector
-	(pt 120 384)
+	(pt 224 384)
 	(pt 264 384)
 )
