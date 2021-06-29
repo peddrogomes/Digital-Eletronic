@@ -231,7 +231,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(parameter
 		"LPM_MODULUS"
-		""
+		"5000000"
 		"Optional counter wrap value"
 	)
 	(parameter
@@ -257,7 +257,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 16 136)(pt 24 128))
 		(line (pt 24 128)(pt 16 120))
 	)
-	(annotation_block (parameter)(rect 592 96 772 229))
+	(annotation_block (parameter)(rect 592 96 792 229))
 )
 (connector
 	(pt 392 360)
