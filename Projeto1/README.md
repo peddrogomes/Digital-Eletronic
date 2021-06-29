@@ -12,16 +12,16 @@
 
 * a: ![image-20210616233159106](https://github.com/peddrogomes/Digital-Eletronic/blob/main/Projeto1//image-20210616233159106.png)
 
-* b: ![image-20210616233334205](C:\Pasta Pessoal\Periodo 20.2\Eln Digital\Projeto1\image-20210616233334205.png)
+* b: ![image-20210616233334205](https://github.com/peddrogomes/Digital-Eletronic/blob/main/Projeto1/image-20210616233334205.png)
 
-* c: ![image-20210616233626176](C:\Pasta Pessoal\Periodo 20.2\Eln Digital\Projeto1\image-20210616233626176.png)
+* c: ![image-20210616233626176](https://github.com/peddrogomes/Digital-Eletronic/blob/main/Projeto1/image-20210616233626176.png)
 
-* d: ![image-20210616233818998](C:\Pasta Pessoal\Periodo 20.2\Eln Digital\Projeto1\image-20210616233818998.png)
+* d: ![image-20210616233818998](https://github.com/peddrogomes/Digital-Eletronic/blob/main/Projeto1/image-20210616233818998.png)
 
-* e: ![image-20210616234019812](C:\Pasta Pessoal\Periodo 20.2\Eln Digital\Projeto1\image-20210616234019812.png)
+* e: ![image-20210616234019812](https://github.com/peddrogomes/Digital-Eletronic/blob/main/Projeto1/image-20210616234019812.png)
 
-* f: ![image-20210616234143544](C:\Pasta Pessoal\Periodo 20.2\Eln Digital\Projeto1\image-20210616234143544.png)
+* f: ![image-20210616234143544](https://github.com/peddrogomes/Digital-Eletronic/blob/main/Projeto1/image-20210616234143544.png)
 
-* g: ![image-20210616234244664](C:\Pasta Pessoal\Periodo 20.2\Eln Digital\Projeto1\image-20210616234244664.png)
+* g: ![image-20210616234244664](https://github.com/peddrogomes/Digital-Eletronic/blob/main/Projeto1/image-20210616234244664.png)
 
   observações: o decod está na ordem ABCD, no qual o A é o algarismo mais significativo.
