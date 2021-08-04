@@ -1,0 +1,102 @@
+SUBDESIGN ajuste
+(
+ clk_placa : INPUT;
+ clk_1s : INPUT;
+ sw_ajuste: INPUT;
+ sw_escolha : INPUT;
+ sw_incremento : INPUT;
+ 
+ ajuste_out :OUTPUT;
+ ajuste_vetor[3..0] : OUTPUT;
+ i_h1, i_h2, i_m1, i_m2 : OUTPUT;
+ 
+)
+VARIABLE
+
+aux : NODE;
+primeira : DFF;
+aux_vetor[1..0] : DFF;
+aux_node[1..0] : NODE;
+
+BEGIN
+
+ajuste_out=aux;
+aux_node=aux_vetor[].q;
+
+aux_vetor[].clk=clk_placa;
+primeira.clk=clk_placa;
+
+	IF sw_ajuste==GND THEN
+		
+		aux=clk_1s;
+		
+		IF sw_escolha==GND & primeira==VCC THEN
+		
+			IF aux_vetor[].q==3 THEN
+			
+				aux_vetor[].d=0;
+				
+				primeira=GND;
+				
+			ELSE
+				aux_vetor[].d=aux_vetor[].q+1;
+				
+				primeira=GND;
+			END IF;
+			
+		ELSE
+			aux_vetor[].d=aux_vetor[].q;	
+		END IF;
+		
+
+		
+		IF sw_escolha==VCC THEN
+		
+				primeira=VCC;
+				
+		END IF;
+		
+		
+	IF sw_incremento==GND THEN
+		
+			CASE aux_node[] IS 
+		
+				WHEN B"00" =>  i_h1 = GND;
+				WHEN B"01" =>	i_h2 = GND;				
+				WHEN B"10" =>	i_m1 = GND;			
+				WHEN B"11" =>	i_m2 = GND;
+								
+				
+			END CASE;
+	ELSE
+				CASE aux_node[] IS 
+		
+				WHEN B"00" =>  i_h1 = VCC;
+				WHEN B"01" =>	i_h2 = VCC;									
+				WHEN B"10" =>	i_m1 = VCC;								
+				WHEN B"11" =>	i_m2 = VCC;
+								
+				
+			END CASE;
+	END IF;
+		
+		
+	ELSE
+	
+		aux=GND;
+		
+		--aux_vetor[].d=0;
+		
+	END IF;
+
+	TABLE 
+		aux_vetor[].q=>ajuste_vetor[];
+		
+		B"00" => B"1000";
+	   B"01" => B"0100";
+		B"10" => B"0010";
+		B"11" => B"0001";
+		
+	END TABLE;
+
+END;

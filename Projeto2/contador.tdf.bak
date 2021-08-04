@@ -1,0 +1,44 @@
+SUBDESIGN contador
+(
+   clk, ena: INPUT;
+   q[3..0] : OUTPUT;
+	s : OUTPUT;
+)
+
+VARIABLE
+
+	count[3..0] : DFF;
+	saux : DFF;
+	
+	clk_aux : NODE;
+BEGIN
+
+   count[].clk = clk;
+	saux.clk = clk;
+	
+	q[] = count[].q;
+	
+	s=saux.q;
+	
+   IF ena THEN %coloquei esse enable só uma chave pra iniciar e parar contagem, dps tira se quiser%	
+	
+		IF count[].q == 9 THEN 
+		
+			count[].d=0;
+			saux=VCC;
+			
+		ELSE
+		
+			count[].d = count[].q + 1;	
+			saux=GND;
+		
+		END IF;
+   ELSE
+	
+      count[].d = count[].q;
+
+   END IF;	
+
+
+
+END;

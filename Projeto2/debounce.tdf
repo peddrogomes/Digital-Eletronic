@@ -1,0 +1,38 @@
+SUBDESIGN debounce
+(
+	clock, button :INPUT;
+	saida :OUTPUT;
+)
+
+VARIABLE
+	count[18..0] :DFF; --500.000(19bits) [100Hz ou 10ms]
+	ff[1..0] : DFF;
+	aux : DFF;
+	counter_set: NODE;
+	
+BEGIN
+	counter_set = ff[1].q $ ff[0].q; --XOR para controlar a contagem do debounce
+	count[].clk = clock;
+	ff[].clk = clock;
+	aux.clk = clock;
+	
+	%
+	o ff[] garante que o botao não ta na fase de inicial, nem na final, de pressionamento.
+	%
+	
+	ff[0].d = button;
+	ff[1].d = ff[0].q; --atraso de 1 clock
+	saida = aux.q;
+	
+	IF (counter_set == 1) THEN --se os valores dos FF's forem diferentes, a contagem começa de novo
+		count[].d = 0;
+	ELSE --as saídas dos FlipFlops iguais indicam que a contagem pode começar (10ms para o debounce de um botão)
+		IF (count[].q == 500000) THEN
+			count[].d = 0;
+			aux.d = ff[1].q;
+		ELSE
+			count[].d = count[].q + 1;
+			aux.d = aux.q;
+		END IF;	
+	END IF;	
+END;

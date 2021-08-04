@@ -1,0 +1,70 @@
+SUBDESIGN contador_m1
+(
+   clk, ena, incremento: INPUT;
+	clk_placa : INPUT;
+	
+   q[3..0] : OUTPUT;
+	s : OUTPUT;
+)
+
+VARIABLE
+	count[3..0] : DFF;
+
+	saux : DFF;
+	
+	primeira : DFF;
+	
+BEGIN
+
+	count[].clk=clk_placa;
+	saux.clk=clk_placa;
+	primeira.clk=clk_placa;
+	
+	s=saux.q;
+	
+	q[]=count[].q;
+	
+	IF ena THEN	
+		
+		
+		IF ((clk==VCC # incremento==GND) & primeira.q==VCC) THEN
+		
+			IF count[].q==5 THEN
+				
+				count[].d=0;
+				
+				primeira.d=GND;				
+				saux.d=VCC;
+				
+			ELSE
+			
+				count[].d=count[].q+1;
+								
+				primeira.d=GND;
+				saux.d=GND;
+			END IF;
+		ELSE
+		
+			primeira.d=primeira.q;
+			
+			count[].d=count[].q;
+
+		END IF;
+		
+		
+		IF clk==GND & incremento==VCC THEN
+				
+			primeira.d=VCC;
+			
+		END IF;
+
+		
+	ELSE
+		count[].d = count[].q;
+		primeira.d=primeira.q;
+		
+	END IF;
+
+
+
+END;

@@ -1,0 +1,35 @@
+SUBDESIGN redutor_de_clock
+(
+	clk_in : INPUT;
+	clk_out : OUTPUT;
+)
+VARIABLE
+	q[24..0]	: DFF; -- /25M(25bits) clock resultante de 2Hz
+
+	aux : TFF;
+	
+
+
+BEGIN
+
+	q[].clk=clk_in;
+	aux.clk=clk_in;
+	
+	clk_out=aux.q;
+	
+	CASE q[].q IS
+		WHEN 25000000 => --mudança de estado a cada 25M (1/2 clock)
+			
+			aux.t=VCC;
+			
+			q[].d=0; --zera o contador de 25M
+		
+		WHEN OTHERS =>
+						
+			aux.t=GND;				
+			
+			q[].d=q[].q+1; -- incremento
+			
+		END CASE;
+
+END;

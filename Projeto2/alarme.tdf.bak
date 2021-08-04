@@ -1,0 +1,83 @@
+SUBDESIGN alarme
+(
+   clk_placa : INPUT;
+	incremento_H1, incremento_H2, incremento_M1, incremento_M2 : INPUT;
+   alarme_H1[3..0], alarme_H2[3..0], alarme_M1[3..0], alarme_M2[3..0] : OUTPUT;
+)
+
+VARIABLE
+
+	count_H1[3..0] : DFF;
+	count_H2[3..0] : DFF;
+	count_M1[3..0] : DFF;
+	count_M2[3..0] : DFF;
+	
+BEGIN
+
+	count_H1[].clk = clk_placa;
+	count_H2[].clk = clk_placa;
+	count_M1[].clk = clk_placa;
+	count_M2[].clk = clk_placa;
+	
+	alarme_H1[] = count_H1[].q;
+	alarme_H2[] = count_H2[].q;
+	alarme_M1[] = count_M1[].q;
+	alarme_M2[] = count_M2[].q;
+	
+	
+	IF incremento_H1 == VCC THEN
+		count_H1[].d = count_H1[].q + 1;
+	ELSE
+		count_H1[].d = count_H1[].q;
+	END IF;
+	
+	IF incremento_H2 == VCC THEN
+		count_H2[].d = count_H2[].q + 1;
+	ELSE
+		count_H2[].d = count_H2[].q;
+	END IF;
+	
+	IF incremento_M1 == VCC THEN
+		count_M1[].d = count_M1[].q + 1;
+	ELSE
+		count_M1[].d = count_M1[].q;
+	END IF;
+	
+	IF incremento_M2 == VCC THEN
+		count_M2[].d = count_M2[].q + 1;
+	ELSE
+		count_M2[].d = count_M2[].q;
+	END IF;
+	
+	
+	IF count_M2[].q == 9 THEN 
+		
+		count_M2[].d=0;
+		
+	END IF;
+		
+	IF count_M1[].q == 5 THEN 
+		
+		count_M1[].d=0;
+
+	END IF;
+	
+	IF count_H2[].q == 9 THEN 
+		
+		count_H2[].d=0;
+
+	END IF;
+	
+	IF count_H1[].q == 2 THEN 
+		
+		count_H1[].d=0;
+		
+		IF count_H2[].q == 3 THEN 
+		
+			count_H2[].d=0;
+
+		END IF;
+
+	END IF;
+
+END;

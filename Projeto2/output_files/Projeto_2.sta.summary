@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk_placa'
+Slack : -4.823
+TNS   : -610.020
+
+Type  : Slow 1200mV 85C Model Setup 'redutor_de_clock:inst12|aux'
+Slack : -1.534
+TNS   : -8.801
+
+Type  : Slow 1200mV 85C Model Hold 'clk_placa'
+Slack : 0.433
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'redutor_de_clock:inst12|aux'
+Slack : 0.465
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_placa'
+Slack : -3.000
+TNS   : -325.679
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'redutor_de_clock:inst12|aux'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Slow 1200mV 0C Model Setup 'clk_placa'
+Slack : -4.487
+TNS   : -558.543
+
+Type  : Slow 1200mV 0C Model Setup 'redutor_de_clock:inst12|aux'
+Slack : -1.345
+TNS   : -7.693
+
+Type  : Slow 1200mV 0C Model Hold 'clk_placa'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'redutor_de_clock:inst12|aux'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_placa'
+Slack : -3.000
+TNS   : -325.679
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'redutor_de_clock:inst12|aux'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Fast 1200mV 0C Model Setup 'clk_placa'
+Slack : -1.530
+TNS   : -135.267
+
+Type  : Fast 1200mV 0C Model Setup 'redutor_de_clock:inst12|aux'
+Slack : -0.054
+TNS   : -0.270
+
+Type  : Fast 1200mV 0C Model Hold 'clk_placa'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'redutor_de_clock:inst12|aux'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_placa'
+Slack : -3.000
+TNS   : -234.619
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'redutor_de_clock:inst12|aux'
+Slack : -1.000
+TNS   : -7.000
+
+------------------------------------------------------------

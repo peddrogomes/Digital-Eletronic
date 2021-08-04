@@ -1,0 +1,153 @@
+SUBDESIGN display
+
+(	clok_in : INPUT;
+	h1[3..0], h2[3..0], m1[3..0], m2[3..0] : INPUT;
+	
+	alarme_in : INPUT;
+	ajuste_in : INPUT;
+	ajuste_vetor[3..0] : INPUT;
+	
+	
+	seg[6..0] : OUTPUT;
+	seletor[3..0] : OUTPUT;
+
+	
+)
+VARIABLE
+
+	ff[12..0] : DFF; -- %5000(13bits), temos um clock de 10kHz
+	ffdaux[1..0] : DFF; --
+
+	aux[1..0] : NODE;
+	disp[3..0] : NODE;
+
+BEGIN
+
+ ff[].clk=clok_in;
+ ffdaux[].clk=clok_in;
+
+ aux[]=ffdaux[];
+ 
+	CASE ff[].q IS
+		WHEN 5000 => 
+		
+			IF ffdaux[].q == 3 THEN --reseta o seletor de 7seg (0,1,2,3)
+				ffdaux[].d=0;
+			ELSE
+				ffdaux[].d=ffdaux[].q+1; --imcrementa o seletor de 7seg
+			END IF;
+			
+			ff[].d=0; --zera nosso contador de 5000
+			
+		WHEN OTHERS =>
+
+			ff[].d = ff[].q + 1; --conta até 5000
+			ffdaux[].d = ffdaux[].q;
+	END CASE;
+			
+	IF ajuste_in==GND THEN
+
+		IF alarme_in==GND THEN
+
+			CASE aux[] IS 	%alterna os digitos de display a partir de aux %
+				WHEN B"00" =>  seletor[] = B"0111";
+									disp[] = h1[];
+				WHEN B"01" =>	seletor[] = B"1011";
+									disp[] = h2[];
+				WHEN B"10" =>	seletor[] = B"1101";
+									disp[] = m1[];
+				WHEN B"11" =>	seletor[] = B"1110";
+									disp[] = m2[];
+				
+			END CASE;
+			
+		ELSE
+
+			seletor[]=B"1111"; --apaga o display para alarme_in=1
+
+		END IF;	
+		
+	ELSE --apaga o digito selecionado no ajuste_Vetor
+	
+		IF ajuste_vetor[]==B"1000" THEN 
+		
+			CASE aux[] IS 
+				WHEN B"00" =>	seletor[] = B"1011";
+									disp[] = h2[];
+									
+				WHEN B"01" =>	seletor[] = B"1011";
+									disp[] = h2[];
+				WHEN B"10" =>	seletor[] = B"1101";
+									disp[] = m1[];
+				WHEN B"11" =>	seletor[] = B"1110";
+									disp[] = m2[];
+				
+			END CASE;
+		END IF;
+		
+		IF ajuste_vetor[]==B"0100" THEN
+		
+			CASE aux[] IS 
+				WHEN B"00" =>  seletor[] = B"0111";
+									disp[] = h1[];
+				WHEN B"01" =>  seletor[] = B"0111";
+									disp[] = h1[];
+									
+				WHEN B"10" =>	seletor[] = B"1101";
+									disp[] = m1[];
+				WHEN B"11" =>	seletor[] = B"1110";
+									disp[] = m2[];
+				
+			END CASE;
+		END IF;
+		
+		IF ajuste_vetor[]==B"0010" THEN
+		
+			CASE aux[] IS 
+				WHEN B"00" =>  seletor[] = B"0111";
+									disp[] = h1[];
+				WHEN B"01" =>	seletor[] = B"1011";
+									disp[] = h2[];
+									
+				WHEN B"10" =>	seletor[] = B"1110";
+									disp[] = m2[];
+				WHEN B"11" =>	seletor[] = B"1110";
+									disp[] = m2[];
+				
+			END CASE;
+		END IF;
+		
+		IF ajuste_vetor[]==B"0001" THEN
+		
+			CASE aux[] IS 
+			
+				WHEN B"00" =>  seletor[] = B"0111";
+									disp[] = h1[];
+				WHEN B"01" =>	seletor[] = B"1011";
+									disp[] = h2[];
+				WHEN B"10" =>	seletor[] = B"1101";
+									disp[] = m1[];
+				WHEN B"11" =>	seletor[] = B"1101";
+									disp[] = m1[];
+				
+			END CASE;
+		END IF;
+	END IF;	
+	
+	
+	TABLE 
+		disp[]=>seg[];
+		
+		B"0000" => B"0000001";
+	   B"0001" => B"1001111";
+		B"0010" => B"0010010";
+		B"0011" => B"0000110";
+		B"0100" => B"1001100";
+		B"0101" => B"0100100";
+		B"0110" => B"0100000";
+		B"0111" => B"0001111";
+		B"1000" => B"0000000";
+		B"1001" => B"0000100";
+	END TABLE;
+		
+END;

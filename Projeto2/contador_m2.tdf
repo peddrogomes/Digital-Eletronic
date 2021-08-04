@@ -1,0 +1,84 @@
+SUBDESIGN contador_m2
+(
+   clk, ena, incremento: INPUT;
+	clk_placa : INPUT;
+	setup_in : INPUT = VCC;
+	
+   q[3..0] : OUTPUT;
+	s : OUTPUT;
+)
+
+VARIABLE
+	count[3..0] : DFF;
+
+	saux : DFF;
+	
+	primeira : DFF; 
+	
+	setup : DFF;
+	
+
+	
+BEGIN
+
+	DEFAULTS
+		setup.d=GND;
+	END DEFAULTS;
+	
+	count[].clk=clk_placa;
+	saux.clk=clk_placa;
+	primeira.clk=clk_placa;
+	setup.clk=clk_placa;
+	
+	s=saux.q;
+	
+	q[]=count[].q;
+	
+	IF ena THEN	
+		
+		
+		IF ((clk==VCC # incremento==GND) & primeira.q==VCC) # setup.q==GND THEN
+		
+			setup.d=VCC;
+			
+			IF count[].q==9 THEN
+				
+				count[].d=0;
+				
+				primeira.d=GND;				
+				saux.d=VCC;
+				
+			ELSE
+			
+				count[].d=count[].q+1;
+								
+				primeira.d=GND;
+				saux.d=GND;
+			END IF;
+		ELSE
+		
+			primeira.d=primeira.q;
+			
+			count[].d=count[].q;
+			
+			setup.d=setup.q;
+
+		END IF;
+		
+		
+		IF clk==GND & incremento==VCC THEN
+				
+			primeira.d=VCC;
+			
+		END IF;
+
+		
+	ELSE
+		count[].d = count[].q;
+		primeira.d=primeira.q;
+		
+	END IF;
+
+
+
+END;

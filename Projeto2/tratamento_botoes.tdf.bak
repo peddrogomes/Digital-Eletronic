@@ -1,0 +1,26 @@
+SUBDESIGN tratamento_botoes
+(	
+	b1, b2, b3 : INPUT;
+	o1, o2, o3, o4 : OUTPUT;
+	
+
+)
+VARIABLE
+
+
+
+BEGIN 
+-- saida o4 corresponde ao aperto de dois botões
+-- como ja usamos o debounce antes, podemos fazer a logica direta, sem atrasos
+
+IF (b1==GND & b2==GND) # (b1==GND & b3==GND) # (b2==GND & b3==GND) THEN
+	
+	o4=GND;
+	
+
+ELSE
+	o4=VCC;
+
+	
+
+END;

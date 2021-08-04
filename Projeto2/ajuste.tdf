@@ -1,0 +1,193 @@
+SUBDESIGN ajuste
+(
+	clk_placa : INPUT;
+	clk_1s : INPUT;
+	sw_ajuste: INPUT;
+	sw_escolha : INPUT;
+	sw_incremento : INPUT;
+	
+	
+	ajuste_out :OUTPUT;
+	ajuste_vetor[3..0] : OUTPUT;
+	
+	i_h1, i_h2, i_m1, i_m2 : OUTPUT;
+	
+	a_h1, a_h2, a_m1, a_m2 : OUTPUT;
+	
+	mux_visor : OUTPUT;
+	
+)
+VARIABLE
+
+	aux, aux2 : NODE;
+	primeira_esc : DFF;
+	aux_vetor[2..0] : DFF; -- de 0-7 (3bits)
+
+BEGIN
+
+	ajuste_out=aux;
+
+	
+	mux_visor= aux_vetor[2].q; --avisa quando é pra mostrar o alarme e quando é pra mostrar a hr normal
+	
+	aux_vetor[].clk=clk_placa;
+		primeira_esc.clk=clk_placa;
+
+	
+	IF sw_ajuste==GND THEN
+		
+		aux=clk_1s; --faz o digito piscar
+		
+		IF sw_escolha==GND & primeira_esc==VCC THEN -- controla o digito que pisca
+		
+			IF aux_vetor[].q==7 THEN
+			
+				aux_vetor[].d=0;
+				
+				primeira_esc=GND;
+				
+			ELSE
+				aux_vetor[].d=aux_vetor[].q+1;
+				
+				primeira_esc=GND;
+			END IF;
+			
+		ELSE
+			aux_vetor[].d=aux_vetor[].q;	
+		END IF;
+		
+
+		
+		IF sw_escolha==VCC THEN --usado para pular apenas 1 digito quando descer o botao
+		
+				primeira_esc=VCC;
+				
+		END IF;
+		
+-----------------------------------------------
+	
+	--incremento dos somadores
+	
+		IF sw_incremento==GND & aux_vetor[].q==B"000" THEN
+		
+			i_h1=GND;
+			
+		
+		ELSE
+	
+			i_h1=VCC;
+		
+		END IF;
+
+		IF sw_incremento==GND & aux_vetor[].q==B"001" THEN
+		
+			i_h2=GND;
+			
+		
+		ELSE
+			i_h2=VCC;
+		END IF;
+	
+		IF sw_incremento==GND & aux_vetor[].q==B"010" THEN
+		
+			i_m1=GND;
+		
+		ELSE
+			i_m1=VCC;
+		END IF;
+	
+		IF sw_incremento==GND & aux_vetor[].q==B"011" THEN
+		
+			i_m2=GND;
+
+		
+		ELSE
+			i_m2=VCC;
+		END IF;
+
+-----------------------------------------------	
+	--incremento pra o alarme
+
+	IF sw_incremento == GND & aux_vetor[].q==B"100" THEN
+		
+			a_h1=GND;
+
+		
+		ELSE
+	
+			a_h1=VCC;
+		
+		END IF;
+	
+	IF sw_incremento == GND & aux_vetor[].q==B"101" THEN
+		
+			a_h2=GND;
+
+		
+		ELSE
+	
+			a_h2=VCC;
+		
+		END IF;
+
+	
+	IF sw_incremento == GND & aux_vetor[].q==B"110" THEN
+		
+			a_m1=GND;
+
+		
+		ELSE
+	
+			a_m1=VCC;
+		
+		END IF;
+		
+
+	IF sw_incremento == GND & aux_vetor[].q==B"111" THEN
+		
+			a_m2=GND;
+	
+		ELSE
+	
+			a_m2=VCC;
+		
+		END IF;
+
+
+-----------------------------------------------------------------
+	
+		
+	ELSE
+	
+		aux=GND;	
+
+		i_m1=VCC;
+		i_m2=VCC;
+		i_h1=VCC;
+		i_h2=VCC;
+		
+		a_m1=VCC;
+		a_m2=VCC;
+		a_h1=VCC;
+		a_h2=VCC;
+		
+	END IF;
+
+	
+	TABLE 
+		
+		aux_vetor[].q=>ajuste_vetor[]; --indica o digito que irá piscar
+		
+		B"000" => B"1000";
+	   B"001" => B"0100";
+		B"010" => B"0010";
+		B"011" => B"0001";
+		
+		B"100" => B"1000";
+	   B"101" => B"0100";
+		B"110" => B"0010";
+		B"111" => B"0001";
+		
+	END TABLE;
+
+END;

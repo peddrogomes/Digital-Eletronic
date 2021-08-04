@@ -1,0 +1,74 @@
+SUBDESIGN acionamento_buzz
+(
+	clk_in : INPUT;
+	acionar : INPUT;
+	
+	buzz_out : OUTPUT;
+)
+VARIABLE
+
+	frequencia[11..0]	: DFF; -- /2K(11bits) clock resultante de 2KHz
+	
+	q[24..0]	: DFF;
+	
+	aux : TFF;
+	
+	aux2 : TFF;
+	
+BEGIN
+
+	q[].clk=clk_in;
+	frequencia[].clk=clk_in;
+	aux.clk=clk_in;
+	aux2.clk=clk_in;
+	
+	
+	CASE q[].q IS
+		WHEN 12500000 => --mudança de estado a cada 25M (1/2 clock)			
+			
+			aux2.t=VCC;
+			
+			q[].d=0; --zera o contador de 25M
+		
+		WHEN OTHERS =>
+						
+			aux2.t=GND;				
+			
+			q[].d=q[].q+1; -- incremento
+				
+	END CASE;
+	
+	CASE frequencia[].q IS
+		WHEN 2000 => --mudança de estado a cada 2K (1/2 clock)
+			
+			aux.t=VCC;
+			
+			frequencia[].d=0; --zera o contador de 2K
+		
+		WHEN OTHERS =>
+						
+			aux.t=GND;				
+				
+			frequencia[].d=frequencia[].q+1; -- incremento
+
+	END CASE;
+	
+	IF acionar == VCC THEN
+	
+		IF aux2.q == VCC THEN
+		
+			buzz_out=aux.q;
+
+		ELSE
+	
+			buzz_out = GND;
+		
+		END IF;
+			
+	ELSE
+	
+		buzz_out = GND;
+		
+	END IF;
+	
+END;
