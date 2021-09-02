@@ -1,0 +1,146 @@
+module buzzer(clk,rst_n,buzz, led1,led2, led3,led4);
+  
+input clk;    
+//input [1:0]estado;
+input rst_n;
+output buzz;
+output reg led1;
+output reg led2;
+output reg led3;
+output reg led4;
+
+reg [13:0]cnt_2khz;	//frequecia do som 2kHz 0.5ms
+reg [3:0]cnt_10hz;	//100ms
+reg [4:0]cnt_4hz;		//250ms
+reg [1:0]cnt_1hz;		//1s
+reg [2:0]cnt_5s;		//5s
+
+reg clk_2khz;			//frequecia do som 2kHz 0.5ms
+reg clk_10hz;			//100ms
+reg clk_4hz;			//250ms
+reg clk_1hz;			//1s
+
+reg [1:0]estado;		//5s
+reg E;
+reg buzz;
+always@(clk_10hz)
+begin
+	if (clk_10hz==1)
+		led1=~led1;
+		
+	if (clk_4hz==1)
+		led2=~led2;
+		
+	if (clk_1hz==1)
+		led3=~led3;
+		
+	if (estado==1)
+		led4=~led4;
+		
+end
+always@(posedge clk,negedge rst_n)
+	begin
+		if(!rst_n)
+			cnt_2khz<=14'd0;	
+		else if(cnt_2khz==14'd12500) //2kHz 0.5ms
+			begin
+			cnt_2khz<=14'd0;
+			clk_2khz<=~clk_2khz;
+			end
+		else   
+			cnt_2khz<=cnt_2khz +1;  
+	end
+
+always@(posedge clk_2khz,negedge rst_n)
+	begin
+		if(!rst_n)
+			cnt_10hz<=4'd0;	
+		else if(cnt_10hz==4'd10) //100ms 10Hz
+			begin
+			cnt_10hz<=4'd0;
+			clk_10hz<=~clk_10hz;
+			end
+		else   
+			cnt_10hz<=cnt_10hz +1;  
+	end
+
+always@(posedge clk_2khz,negedge rst_n)
+	begin
+		if(!rst_n)
+			cnt_4hz<=5'd0;	
+		else if(cnt_4hz==5'd25) //250ms 4Hz
+			begin
+			cnt_4hz<=5'd0;
+			clk_4hz<=~clk_4hz;
+			end
+		else   
+			cnt_4hz<=cnt_4hz +1;		
+	end
+
+always@(posedge cnt_4hz,negedge rst_n)
+	begin
+		if(!rst_n)
+			cnt_1hz<=2'd0; 
+		else if(cnt_1hz==2'd2) //1s 1Hz
+			begin
+			cnt_1hz<=2'd0;
+			clk_1hz<=~clk_1hz;
+			end
+		else   
+			cnt_1hz<=cnt_1hz +1;
+	end
+	
+always@(posedge clk_1hz,negedge rst_n)
+	begin
+		if(!rst_n)
+			cnt_5s<=3'd0; 
+		else if(cnt_5s==3'd5) //5s 0.2Hz
+		begin
+			cnt_5s<=3'd0;
+			estado<=estado +1;
+		end
+		else
+			cnt_5s<=cnt_5s+1;
+	end
+
+always@(posedge clk_2khz)
+	begin
+		if(E==0)
+			buzz <= 1'b0;
+		else //if(clk_2khz) //2kHz 0.5ms
+			buzz<=~buzz; 
+	end
+	
+/*always@(posedge clk)
+	begin
+		case(estado)
+			2'b01:
+			begin
+				if (clk_1hz)
+//				begin
+//					if(clk_10hz)
+						E<=1'b1; //quente
+//				end
+				else 
+					E<=1'b0;
+			end
+			2'b10:
+			begin
+//					if (clk_1hz)
+//					begin
+						if(clk_4hz)
+							E<=1'b1;	//frio
+//					end
+					else 
+						E<=1'b0;
+			end
+			default: E<=1'b0;
+		endcase
+	end
+*/
+always@(clk_1hz)
+	begin
+		E<=!E;
+	end
+
+endmodule

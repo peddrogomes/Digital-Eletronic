@@ -1,0 +1,54 @@
+SUBDESIGN questao_1b
+(	A, B, C : INPUT; --select
+	G1, G2A, G2B : INPUT; --enable
+	 Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7 : OUTPUT;
+
+)
+VARIABLE
+	select[2..0] : NODE;
+	ys[7..0] :  NODE;
+		
+
+	
+BEGIN
+
+	select[0]=A;
+	select[1]=B;
+	select[2]=C;
+	
+	Y0=ys[0];
+	Y1=ys[1];
+	Y2=ys[2];
+	Y3=ys[3];
+	Y4=ys[4];
+	Y5=ys[5];
+	Y6=ys[6];
+	Y7=ys[7];
+
+	IF !(G2A) & !(G2B) & G1 THEN 
+	
+	
+	TABLE 
+		select[]=>ys[];
+		
+		B"000" => B"01111111";
+	   B"001" => B"10111111";
+		B"010" => B"11011111";
+		B"011" => B"11101111";
+		B"100" => B"11110111";
+		B"101" => B"11111011";
+		B"110" => B"11111101";
+		B"111" => B"11111110";
+		
+	END TABLE;
+	
+	ELSE
+	
+		ys[]=VCC;
+		
+		--tudo 1
+		
+	END IF;
+	
+
+END;

@@ -1,0 +1,11 @@
+
+State Machine - |questao_5|count
+Name count.s7 count.s6 count.s5 count.s4 count.s3 count.s2 count.s1 count.s8 
+count.s1 0 0 0 0 0 0 0 0 
+count.s2 0 0 0 0 0 1 1 0 
+count.s3 0 0 0 0 1 0 1 0 
+count.s4 0 0 0 1 0 0 1 0 
+count.s5 0 0 1 0 0 0 1 0 
+count.s6 0 1 0 0 0 0 1 0 
+count.s7 1 0 0 0 0 0 1 0 
+count.s8 0 0 0 0 0 0 1 1 

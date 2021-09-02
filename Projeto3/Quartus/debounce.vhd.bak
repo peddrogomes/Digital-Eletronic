@@ -1,0 +1,35 @@
+entity debounce is
+    port(    clk : in std_logic;
+             botao : in std_logic;
+				saida : out std_logic:=0);
+
+			end debounce;
+
+architecture vhd of debounce is
+
+    constant delay : integer := 500000; -- 10ms
+    signal contador : integer := 0;
+    signal aux : std_logic := '0';
+
+    begin
+
+    process(clk)
+    begin
+	 
+        if rising_edge(clk) then
+		  
+				if (botao = '0') then
+				
+					contador <= contador + 1;
+					
+               if (contador = 500000) then
+						saida <= not saida;
+					end if;
+				else
+					contador <= 0;
+				end if;
+        end if;
+    end process;
+
+end vhd;
+

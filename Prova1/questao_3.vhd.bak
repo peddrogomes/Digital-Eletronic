@@ -1,0 +1,11 @@
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all ;
+use IEEE.numeric_std.all;
+
+ENTITY questao_3 IS
+	PORT( 
+	
+	
+	
+	);
+END questao_3;

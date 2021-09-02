@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk_in'
+Slack : -4.874
+TNS   : -278.070
+
+Type  : Slow 1200mV 85C Model Setup 'buzzer:inst1|clk_2khz'
+Slack : -2.185
+TNS   : -29.962
+
+Type  : Slow 1200mV 85C Model Setup 'LCD_FPGA:inst|E'
+Slack : -0.409
+TNS   : -7.634
+
+Type  : Slow 1200mV 85C Model Hold 'clk_in'
+Slack : 0.433
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'buzzer:inst1|clk_2khz'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'LCD_FPGA:inst|E'
+Slack : 0.502
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_in'
+Slack : -3.000
+TNS   : -169.544
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'LCD_FPGA:inst|E'
+Slack : -1.487
+TNS   : -52.045
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'buzzer:inst1|clk_2khz'
+Slack : -1.487
+TNS   : -32.714
+
+Type  : Slow 1200mV 0C Model Setup 'clk_in'
+Slack : -4.484
+TNS   : -248.331
+
+Type  : Slow 1200mV 0C Model Setup 'buzzer:inst1|clk_2khz'
+Slack : -1.897
+TNS   : -25.800
+
+Type  : Slow 1200mV 0C Model Setup 'LCD_FPGA:inst|E'
+Slack : -0.303
+TNS   : -4.648
+
+Type  : Slow 1200mV 0C Model Hold 'clk_in'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'buzzer:inst1|clk_2khz'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'LCD_FPGA:inst|E'
+Slack : 0.472
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_in'
+Slack : -3.000
+TNS   : -169.544
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'LCD_FPGA:inst|E'
+Slack : -1.487
+TNS   : -52.045
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'buzzer:inst1|clk_2khz'
+Slack : -1.487
+TNS   : -32.714
+
+Type  : Fast 1200mV 0C Model Setup 'clk_in'
+Slack : -1.477
+TNS   : -59.083
+
+Type  : Fast 1200mV 0C Model Setup 'buzzer:inst1|clk_2khz'
+Slack : -0.373
+TNS   : -1.958
+
+Type  : Fast 1200mV 0C Model Setup 'LCD_FPGA:inst|E'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_in'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'buzzer:inst1|clk_2khz'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'LCD_FPGA:inst|E'
+Slack : 0.195
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_in'
+Slack : -3.000
+TNS   : -122.383
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'LCD_FPGA:inst|E'
+Slack : -1.000
+TNS   : -35.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'buzzer:inst1|clk_2khz'
+Slack : -1.000
+TNS   : -22.000
+
+------------------------------------------------------------

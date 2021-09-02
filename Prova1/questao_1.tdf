@@ -1,0 +1,30 @@
+SUBDESIGN questao_1
+(	sel[1..0] : INPUT;
+	b, a : INPUT;
+	saida_2, saida_1 : OUTPUT;
+
+)
+VARIABLE
+	ff_jk : JKFF;
+	nsel[1..0] : NODE; --seletor negado
+
+BEGIN
+
+	ff_jk.clk=b;
+	
+	nsel[0]=!(sel[0]); 
+	nsel[1]=!(sel[1]);
+	
+	saida_2=ff_jk.q;
+	saida_1=!(ff_jk.q);
+	
+	ff_jk.k= nsel[0];
+	
+	IF (b & sel[0] & nsel[1]) # (b & a & nsel[0] & sel[1]) # ( a & nsel[0] & nsel[1]) THEN
+		
+		ff_jk.j=VCC;
+	ELSE
+		ff_jk.j=GND;
+	
+	END IF;
+END;

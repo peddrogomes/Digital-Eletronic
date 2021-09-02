@@ -1,0 +1,83 @@
+SUBDESIGN acionamento_buzz
+(
+	clk_in : INPUT;
+	acionar[1..0] : INPUT;
+	
+	buzz_out : OUTPUT;
+)
+VARIABLE
+
+	frequencia[23..0]	: DFF; -- /25K(11bits) clock resultante de 2KHz
+	q[23..0]	: DFF;
+	aux : TFF;
+	aux2 : TFF;
+	
+BEGIN
+
+	q[].clk=clk_in;
+	frequencia[].clk=clk_in;
+	aux.clk=clk_in;
+	aux2.clk=clk_in;
+	
+	CASE q[].q IS --regula a frequencia do bip
+	
+		WHEN 1250000 => --mudança de estado a cada 12,5M (1/2 clock)			
+			
+			aux2.t=VCC;
+			
+			q[].d=0; --zera o contador de 12,5M
+		
+		WHEN OTHERS =>
+						
+			aux2.t=GND;				
+			
+			q[].d=q[].q+1; -- incremento
+				
+	END CASE;
+	
+	CASE frequencia[].q IS --regula a frequencia do som
+		WHEN 625000 => --mudança de estado a cada 2K (1/2 clock)
+			
+			aux.t=VCC;
+			
+			frequencia[].d=0; --zera o contador de 2K
+		
+		WHEN OTHERS =>
+						
+			aux.t=GND;				
+				
+			frequencia[].d=frequencia[].q+1; -- incremento
+
+	END CASE;
+	
+	IF acionar == B"01" THEN --frio
+	
+		IF aux2.q == VCC THEN
+		
+			buzz_out=aux.q;
+
+		ELSE
+	
+			buzz_out = GND;
+		
+		END IF;
+	
+	ELSIF acionar == B"01" THEN --quente
+	
+		IF aux2.q == VCC THEN
+		
+			buzz_out=aux.q;
+
+		ELSE
+	
+			buzz_out = GND;
+		
+		END IF;
+		
+	ELSE --normal
+	
+		buzz_out = GND; 
+		
+	END IF;
+	
+END;

@@ -1,0 +1,117 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "E",
+					"strict" : false
+				},
+				{
+					"name" : "RS",
+					"strict" : false
+				},
+				{
+					"name" : "scl",
+					"strict" : false
+				},
+				{
+					"name" : "buzz_out",
+					"strict" : false
+				},
+				{
+					"name" : "7seg[7]",
+					"strict" : false
+				},
+				{
+					"name" : "7seg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "7seg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "7seg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "7seg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "7seg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "7seg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "7seg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cs[3]",
+					"strict" : false
+				},
+				{
+					"name" : "cs[2]",
+					"strict" : false
+				},
+				{
+					"name" : "cs[1]",
+					"strict" : false
+				},
+				{
+					"name" : "cs[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DB[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sda",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "clk_in",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

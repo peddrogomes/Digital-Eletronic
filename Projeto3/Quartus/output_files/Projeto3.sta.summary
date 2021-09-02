@@ -1,0 +1,185 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'divisor:inst99|auxiliar'
+Slack : -6.901
+TNS   : -256.895
+
+Type  : Slow 1200mV 85C Model Setup 'sw1'
+Slack : -5.064
+TNS   : -203.962
+
+Type  : Slow 1200mV 85C Model Setup 'clk_in'
+Slack : -4.851
+TNS   : -246.294
+
+Type  : Slow 1200mV 85C Model Setup 'debounce_v2:inst7|b1_f'
+Slack : -4.524
+TNS   : -203.359
+
+Type  : Slow 1200mV 85C Model Setup 'LCD_FPGA:inst|E'
+Slack : -0.717
+TNS   : -10.718
+
+Type  : Slow 1200mV 85C Model Hold 'debounce_v2:inst7|b1_f'
+Slack : 0.343
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divisor:inst99|auxiliar'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_in'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'LCD_FPGA:inst|E'
+Slack : 0.485
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'sw1'
+Slack : 0.843
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_in'
+Slack : -3.000
+TNS   : -130.882
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sw1'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'LCD_FPGA:inst|E'
+Slack : -1.487
+TNS   : -92.194
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divisor:inst99|auxiliar'
+Slack : -1.487
+TNS   : -74.350
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce_v2:inst7|b1_f'
+Slack : -0.093
+TNS   : -3.602
+
+Type  : Slow 1200mV 0C Model Setup 'divisor:inst99|auxiliar'
+Slack : -6.431
+TNS   : -239.411
+
+Type  : Slow 1200mV 0C Model Setup 'sw1'
+Slack : -4.952
+TNS   : -202.275
+
+Type  : Slow 1200mV 0C Model Setup 'debounce_v2:inst7|b1_f'
+Slack : -4.509
+TNS   : -205.043
+
+Type  : Slow 1200mV 0C Model Setup 'clk_in'
+Slack : -4.440
+TNS   : -221.909
+
+Type  : Slow 1200mV 0C Model Setup 'LCD_FPGA:inst|E'
+Slack : -0.620
+TNS   : -6.399
+
+Type  : Slow 1200mV 0C Model Hold 'debounce_v2:inst7|b1_f'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_in'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divisor:inst99|auxiliar'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'LCD_FPGA:inst|E'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'sw1'
+Slack : 0.658
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_in'
+Slack : -3.000
+TNS   : -130.882
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sw1'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'LCD_FPGA:inst|E'
+Slack : -1.487
+TNS   : -92.194
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divisor:inst99|auxiliar'
+Slack : -1.487
+TNS   : -74.350
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce_v2:inst7|b1_f'
+Slack : -0.137
+TNS   : -6.436
+
+Type  : Fast 1200mV 0C Model Setup 'divisor:inst99|auxiliar'
+Slack : -2.911
+TNS   : -101.303
+
+Type  : Fast 1200mV 0C Model Setup 'debounce_v2:inst7|b1_f'
+Slack : -1.941
+TNS   : -77.454
+
+Type  : Fast 1200mV 0C Model Setup 'sw1'
+Slack : -1.694
+TNS   : -69.207
+
+Type  : Fast 1200mV 0C Model Setup 'clk_in'
+Slack : -1.546
+TNS   : -58.724
+
+Type  : Fast 1200mV 0C Model Setup 'LCD_FPGA:inst|E'
+Slack : 0.237
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'debounce_v2:inst7|b1_f'
+Slack : 0.125
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_in'
+Slack : 0.168
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divisor:inst99|auxiliar'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'LCD_FPGA:inst|E'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'sw1'
+Slack : 0.252
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_in'
+Slack : -3.000
+TNS   : -94.485
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sw1'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'LCD_FPGA:inst|E'
+Slack : -1.000
+TNS   : -62.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisor:inst99|auxiliar'
+Slack : -1.000
+TNS   : -50.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce_v2:inst7|b1_f'
+Slack : 0.275
+TNS   : 0.000
+
+------------------------------------------------------------

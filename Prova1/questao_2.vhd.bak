@@ -1,0 +1,29 @@
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all ;
+
+ENTITY questao2 IS
+	PORT( 
+	teclado : in std_logic_Vector(3 DOWNTO 0);
+	clock : in std_logic;
+	startn, stopn, clearn, door_closed : in std_logic;
+	
+	mag_on : out std_logic;
+	min_segs, sec_tens_segs, sec_ones_segs : out std_logic_vector(6 downto 0);
+	
+	
+	);
+END questao2;
+
+
+--7 seg
+WITH a SELECT 
+s <=  "0000001" WHEN "0000",
+		"1001111" WHEN "0001",
+		"0010010" WHEN "0010",
+		"0000110" WHEN "0011",
+		"1001100" WHEN "0100",
+		"0100100" WHEN "0101",
+		"0100000" WHEN "0110",
+		"0001111" WHEN "0111",
+		"0000000" WHEN "1000",
+		"0000100" WHEN "1010";
